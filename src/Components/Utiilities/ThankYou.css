@@ -1,0 +1,91 @@
+.thanku {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f3e9ff, #fdecec);
+  padding: 2vw;
+}
+
+.thanku-card {
+    width: 54vw;
+    max-width: 800px;
+    background: linear-gradient(180deg, #fff4f4, #f9ecff);
+    border-radius: 1.5vw;
+    padding: 2vw 2vw;
+    text-align: center;
+    box-shadow: 0 1vw 2.5vw rgba(0, 0, 0, 0.15);
+}
+
+.thanku-icon {
+  font-size: 3.5vw;
+  color: #3f51ff;
+  margin-bottom: 1vw;
+}
+.thanku-btn a{
+    font-size: 1.2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+.thanku-title {
+  font-size: 4vw;
+  color: #3f51ff;
+  font-weight: 700;
+  margin-bottom: 1.5vw;
+}
+
+.thanku-message {
+  font-size: 1.3vw;
+  color: #2f2f2f;
+  margin-bottom: 1vw;
+}
+
+.thanku-message .check {
+  color: #000;
+  margin-right: 0.5vw;
+}
+
+.thanku-subtext {
+  font-size: 1.1vw;
+  color: #444;
+  margin-bottom: 2vw;
+}
+
+.thanku-btn {
+  font-size: 1.2vw;
+  padding: 0.9vw 2.5vw;
+  border-radius: 0.6vw;
+  border: none;
+  cursor: pointer;
+  background: #c80063;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.thanku-btn:hover {
+  background: #a70052;
+  transform: translateY(-0.2vw);
+}
+
+/* Mobile fallback */
+@media (max-width: 768px) {
+  .thanku-card {
+    width: 90vw;
+    padding: 6vw;
+  }
+
+  .thanku-title {
+    font-size: 8vw;
+  }
+
+  .thanku-icon {
+    font-size: 7vw;
+  }
+
+  .thanku-message,
+  .thanku-subtext,
+  .thanku-btn {
+    font-size: 3.5vw;
+  }
+}

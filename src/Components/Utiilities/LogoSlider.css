@@ -1,0 +1,289 @@
+.slider-container {
+  width: 94vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 1.6vw;
+  padding-right: 2.4vw;
+  background: #f4f3fd;
+  border-radius: 1vw;
+  padding: 0vw;
+}
+
+.FeatureIDStyles {
+  position: absolute;
+  bottom: 5vw;
+}
+
+/* Track should stretch full width */
+.slider-track {
+  display: flex;
+  width: 94vw;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Each slide takes full width and centers image */
+.slide_LMS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide_LMS img {
+  width: 94vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  padding: 1vw;
+}
+
+/* Dots */
+.dots-container {
+  position: absolute;
+  bottom: 0.6vw;
+  display: flex;
+  gap: 10px;
+  padding-bottom: -0.2vw;
+  margin-bottom: -0.3vw;
+}
+
+.dot {
+  width: 0.6vw;
+  height: 0.6vw;
+  border-radius: 50%;
+  background: #bcbcbc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #333;
+  transform: scale(1.3);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slider-container {
+    max-width: 98vw;
+  }
+
+
+
+  .dot {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+
+
+.logo-slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 2vw 0;
+}
+
+.logo-slider {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+.logo-item img {
+  height: 5vw;
+  width: auto;
+  transition: 0.3s ease;
+}
+
+.logo-item img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Smooth infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .logo-slider {
+    display: flex;
+    width: auto;
+    animation: scroll 30s linear infinite;
+  }
+
+  .logo-item img {
+    height: 50%;
+  }
+}
+
+
+
+.single-slider-container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+/* one image with fade effect */
+.fade-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  animation: fadeSlide 1.2s ease forwards;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(30%);
+}
+
+.fade-image:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+/* Fade transition */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .single-slider-container {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .fade-image {
+    max-height: 100%;
+  }
+}
+
+
+.slider {
+  justify-content: center;
+
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 2s ease-in-out;
+  /* Smooth transition over 1 second */
+}
+
+.slideh {
+  min-width: 147px;
+  margin-right: 38px;
+  padding: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+/* img {
+    width: 100px; 
+    height: auto;
+  } */
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 3vw;
+  padding-top: 2vw;
+  /* margin: 0vw 3vw; */
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 2s ease-in-out;
+}
+
+.slideh {
+  min-width: 147px;
+  margin-right: 38px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* .slideh img {
+    width: 100px;
+    height: auto;
+  } */
+
+/* Add New Styles for offer page */
+
+.OfferPageSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 3vw;
+  padding-top: 8vw;
+}
+
+.OfferPageSliderblackfriday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 3vw;
+  padding-top: 8vw;
+}
+
+.slideOffer {
+  min-width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .slider-inner {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4vw;
+  }
+
+  .slideh {
+    margin: 0;
+    width: 100%;
+  }
+
+  .slideh img {
+    width: 100%;
+    /* Adjust to desired size */
+    height: auto;
+  }
+}

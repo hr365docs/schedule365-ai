@@ -1,0 +1,155 @@
+/* .intpara{
+    font-family: "Assistant", Sans-serif;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.intmaincontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding-top: 1vw;
+}
+.intcontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    gap: 0;
+    box-shadow: 4px 4px 8px rgba(0.2, 0.2, 0.2, 0.4);
+    border-radius: 0.54vw;
+    padding:2vw;
+    width: 25%;
+}
+.intsubheader{
+    font-family: "Assistant", Sans-serif;
+    font-size: 1.6vw;
+    font-weight: 700;
+    color: #2323CE;
+    margin: 0vw;
+    padding-top: 1vw;
+}
+.intimage{
+    width: 4vw;
+
+}
+.intcontent{
+    font-family: "Assistant", Sans-serif;
+    font-size: 1.3vw;
+    font-weight: 400;
+   line-height: 1.4;
+    margin: 0vw;
+} */
+ /* Default styles (Desktop) remain the same */
+.intpara {
+    font-family: "Assistant", Sans-serif;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.intmaincontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding-top: 1vw;
+}
+
+.intcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    gap: 0;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0.54vw;
+    padding: 2vw;
+    width: 25%;
+}
+
+.intsubheader {
+    font-family: "Assistant", Sans-serif;
+    font-size: 1.6vw;
+    font-weight: 700;
+    color: #2323CE;
+    margin: 0vw;
+    padding-top: 1vw;
+}
+
+.intimage {
+    width: 4vw;
+}
+
+.intcontent {
+    font-family: "Assistant", Sans-serif;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0vw;
+}
+
+/* Tablet View (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .intpara {
+        font-size: 2.5vw;
+    }
+
+    .intmaincontainer {
+        flex-direction: column;
+        gap: 3vw;
+        padding-top: 2vw;
+    }
+
+    .intcontainer {
+        width: 80%;
+        margin: 0 auto;
+        padding: 3vw;
+        border-radius: 1vw;
+    }
+
+    .intsubheader {
+        font-size: 3vw;
+        padding-top: 2vw;
+    }
+
+    .intimage {
+        width: 8vw;
+    }
+
+    .intcontent {
+        font-size: 2.5vw;
+    }
+}
+
+/* Mobile View (up to 767px) */
+@media screen and (max-width: 767px) {
+    .intpara {
+        font-size: 4vw;
+    }
+
+    .intmaincontainer {
+        flex-direction: column;
+        gap: 6vw;
+        padding-top: 3vw;
+    }
+
+    .intcontainer {
+        width: 90%;
+        padding: 5vw;
+        border-radius: 2vw;
+        box-shadow: 2px 2px 4px rgba(0.2, 0.2, 0.2, 0.4);
+    }
+
+    .intsubheader {
+        font-size: 5vw;
+        padding-top: 3vw;
+    }
+
+    .intimage {
+        width: 12vw;
+    }
+
+    .intcontent {
+        font-size: 4vw;
+    }
+}
