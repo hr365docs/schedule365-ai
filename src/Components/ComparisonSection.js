@@ -21,118 +21,118 @@ const tabs = [
     { id: "security", label: "Security & Compliance" },
     { id: "integration", label: "Integration" },
     { id: "cost", label: "Cost & IT Overhead" },
-    { id: "features", label: "Contract Features" },
+    { id: "features", label: "Scheduling Features" },
 ];
 
 const panelData = {
     adoption: [
         {
             category: "Learning Curve",
-            bad: "New UI and new workflows — requires dedicated training programs and change management",
-            good: "Works inside SharePoint, Teams, and Outlook — tools your team already uses every day",
+            bad: "New standalone UI and external logins — requires dedicated employee onboarding and change management",
+            good: "Natively embedded inside Outlook and Microsoft Teams — uses tools your employees already work in daily",
         },
         {
             category: "Adoption Speed",
-            bad: "Weeks or months before teams are comfortable and actively using the platform",
-            good: "Fast adoption — users are already familiar with the Microsoft 365 environment",
+            bad: "Weeks or months before cross-department teams actively adopt and link external calendar apps",
+            good: "Instant adoption — team members are already signed into their Microsoft 365 accounts",
         },
         {
-            category: "Collaboration",
-            bad: "Contract discussions happen outside the tool — in email or Teams — creating silos",
-            good: "Collaborate on contracts directly inside Teams channels and Outlook — no context switching",
+            category: "Team Coordination",
+            bad: "Meeting coordination occurs across isolated tools — creating schedule silos and missing calendar holds",
+            good: "Schedule and manage meetings directly inside Teams channels, Outlook chats, and Copilot chats",
         },
         {
             category: "Mobile & Remote Access",
-            bad: "Separate login and app required — adds friction for remote or mobile users",
-            good: "Accessible anywhere via Microsoft 365 mobile apps — no separate login needed",
+            bad: "Requires downloading separate apps and re-authenticating on mobile devices",
+            good: "Accessible seamlessly across Outlook Mobile and Microsoft Teams apps on iOS and Android",
         },
     ],
     security: [
         {
             category: "Data Residency",
-            bad: "Contract data leaves your environment and is stored on the vendor's third-party servers",
-            good: "All contract data stays inside your Microsoft 365 tenant — you own and control it",
+            bad: "Attendee emails, meeting notes, and calendar metadata leave your tenant to third-party cloud servers",
+            good: "All scheduling and calendar data stays completely inside your Microsoft 365 tenant boundary",
         },
         {
-            category: "Access Control",
-            bad: "Separate user management system — difficult to sync with your existing directory",
-            good: "Role-based access powered by Azure Active Directory — consistent with your IT policies",
+            category: "Access & Identity Control",
+            bad: "Separate user database and credentials — difficult to synchronize or revoke upon employee offboarding",
+            good: "Role-based access powered by Microsoft Entra ID (Azure AD) with instant policy enforcement",
         },
         {
-            category: "Audit Trail",
-            bad: "Audit logs stored in a separate system — harder to consolidate for compliance reviews",
-            good: "Full audit trail natively logged in Microsoft 365 compliance centre — always audit-ready",
+            category: "Audit Logging",
+            bad: "Audit logs are siloed in the vendor's private portal — hard to reconcile during compliance audits",
+            good: "Full booking and access audit trail natively retained in your Microsoft Purview compliance center",
         },
         {
             category: "Compliance Standards",
-            bad: "Vendor compliance certifications may not align with your existing governance framework",
-            good: "Inherits Microsoft 365 compliance — ISO 27001, SOC 2, GDPR, and government cloud ready",
+            bad: "Vendor compliance certifications vary and frequently conflict with internal data governance",
+            good: "Inherits enterprise Microsoft 365 compliance — SOC 2 Type II, ISO 27001, HIPAA, and GDPR ready",
         },
     ],
     integration: [
         {
-            category: "Email & Calendar",
-            bad: "Requires custom connectors or paid add-ons to sync with Outlook and calendar reminders",
-            good: "Native Outlook integration — renewal alerts, approval notifications, and tasks land in the inbox",
+            category: "Email & Calendar Sync",
+            bad: "Relies on periodic API polling or webhooks that result in delay lags and accidental double-bookings",
+            good: "Direct Graph API bi-directional synchronization with Outlook — updates availability instantaneously",
         },
         {
             category: "Workflow Automation",
-            bad: "Proprietary automation tools with limited external connections and higher dev costs",
-            good: "Built on Power Automate — connect to 900+ apps with pre-built connectors, no custom dev needed",
+            bad: "Proprietary automation engines with restricted triggers and expensive premium connectors",
+            good: "Native Microsoft Power Automate integration — connect to 900+ apps without custom coding",
         },
         {
-            category: "Document Management",
-            bad: "Contracts must be exported and re-imported when collaborating in Word or other tools",
-            good: "Contracts live natively in SharePoint — edit in Word Online with version history always intact",
+            category: "Video Conferencing & Rooms",
+            bad: "Requires manual generation or third-party plugins to insert Microsoft Teams meeting room links",
+            good: "Generates secure Microsoft Teams video links and reserves Exchange meeting rooms automatically",
         },
         {
             category: "CRM & ERP Connectivity",
-            bad: "Integration requires middleware, IT time, and often additional licensing fees",
-            good: "Connects to Dynamics 365, Salesforce, and SAP through Power Automate with minimal setup",
+            bad: "Integration requires middleware, custom zap scripts, and ongoing developer maintenance",
+            good: "Connects smoothly with Dynamics 365, Power BI, and enterprise CRMs through native dataflows",
         },
     ],
     cost: [
         {
             category: "Licensing Model",
-            bad: "Separate per-seat SaaS licensing on top of existing Microsoft 365 spend — budget impact doubles",
-            good: "Built on your existing Microsoft 365 investment — no redundant platform costs",
+            bad: "Expensive per-seat monthly subscriptions stacked on top of existing Microsoft 365 licensing costs",
+            good: "Built directly on your existing Microsoft 365 investment — eliminate redundant SaaS spend",
         },
         {
             category: "Implementation Cost",
-            bad: "High implementation costs — data migration, custom integrations, and consultant fees",
-            good: "Deploys inside your existing SharePoint — no data migration or complex infrastructure changes",
+            bad: "High setup overhead — third-party directory syncs, custom domain routing, and IT consultant fees",
+            good: "One-click tenant deployment — zero data migration or third-party infrastructure setup needed",
         },
         {
-            category: "IT & Maintenance",
-            bad: "IT must manage another vendor relationship, another set of APIs, and another update cycle",
-            good: "Maintained and updated alongside Microsoft 365 — minimal incremental IT overhead",
+            category: "IT & Admin Overhead",
+            bad: "IT admins must manage another external vendor SLA, security risk assessment, and billing cycle",
+            good: "Administered directly through Microsoft 365 admin center — minimal ongoing IT overhead",
         },
         {
-            category: "Storage Costs",
-            bad: "Vendor-managed storage with per-GB pricing or storage tier upgrades as volume grows",
-            good: "Contracts stored in SharePoint — you use storage you've already paid for with Microsoft 365",
+            category: "Enterprise Tier Scaling",
+            bad: "Tiered paywalls restrict team round-robin, multi-host, and custom branding behind costly enterprise tiers",
+            good: "Complete enterprise scheduling feature set included without hidden tier restrictions",
         },
     ],
     features: [
         {
-            category: "AI Capabilities",
-            bad: "AI features locked to higher-tier plans — often expensive add-ons requiring upgrades",
-            good: "AI contract creation, clause risk detection, obligation extraction, and summaries included",
+            category: "AI Scheduling Agents",
+            bad: "Basic automated links with no AI context; premium AI agents require expensive higher-tier upgrades",
+            good: "Built-in autonomous AI agents parse scheduling intent from emails and book mutual slots automatically",
         },
         {
-            category: "Approval Workflows",
-            bad: "Workflow builders are proprietary — complex rules require vendor support or developer help",
-            good: "Automated multi-stage approvals via Power Automate — configured by your team, not a developer",
+            category: "Routing & Distribution",
+            bad: "Rigid scheduling rules that cannot factor in real-time attendee workloads or internal calendars",
+            good: "Intelligent round-robin, multi-host collective sync, and VIP priority routing configured with ease",
         },
         {
-            category: "Renewal Tracking",
-            bad: "Renewal alerts sent from the vendor's system — often missed or treated as spam",
-            good: "Renewal alerts arrive in Outlook from your own domain — trusted, timely, and actionable",
+            category: "Reminders & Notifications",
+            bad: "Booking notifications delivered from generic third-party domains — frequently caught by spam filters",
+            good: "Branded calendar invitations and reminders sent directly from your verified corporate domain",
         },
         {
-            category: "Search & Retrieval",
-            bad: "Siloed search that only covers contracts in the CLM tool — not your wider document library",
-            good: "Microsoft 365 Search covers contracts alongside emails, Teams messages, and SharePoint files",
+            category: "Cross-Tenant Search",
+            bad: "Siloed booking visibility that cannot coordinate internal resource availability or focus time",
+            good: "Microsoft 365 Copilot search instantly surfaces meeting histories, participant availability, and agendas",
         },
     ],
 };
@@ -184,19 +184,19 @@ export default function ComparisonSection() {
           cursor: pointer;
           transition: all 0.2s;
           white-space: nowrap;
-          font-family:Assistant;
+          font-family: Assistant;
         }
         .ctab-btn:hover {
-             background: linear-gradient(135deg,#1285f5 24%,#2323ce 80%);
-    border: 1px solid #3445e8;
-    border-radius: 1.5vw;
-    color: #fff;
+          background: linear-gradient(135deg, #1285f5 24%, #2323ce 80%);
+          border: 1px solid #3445e8;
+          border-radius: 1.5vw;
+          color: #fff;
         }
         .ctab-btn.active {
-             background: linear-gradient(135deg,#1285f5 24%,#2323ce 80%);
-    border: 1px solid #3445e8;
-    border-radius: 1.5vw;
-    color: #fff;
+          background: linear-gradient(135deg, #1285f5 24%, #2323ce 80%);
+          border: 1px solid #3445e8;
+          border-radius: 1.5vw;
+          color: #fff;
         }
 
         .compare-table {
@@ -228,26 +228,26 @@ export default function ComparisonSection() {
 
         .badge-icon {
           width: 2.4vw;
-    height: 2.4vw;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    flex-shrink: 0;
+          height: 2.4vw;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          flex-shrink: 0;
         }
 
         .badge-label-left {
-       font-family: 'Assistant';
-    font-size: 1.4vw;
-    font-weight: 700;
-    color: #1E293B;
+          font-family: 'Assistant';
+          font-size: 1.4vw;
+          font-weight: 700;
+          color: #1E293B;
         }
         .badge-label-right {
-    font-size: 1.4vw;
-    font-weight: 700;
-    color: #fff;
-    font-family: 'Assistant';
+          font-size: 1.4vw;
+          font-weight: 700;
+          color: #fff;
+          font-family: 'Assistant';
         }
 
         .recommended-pill {
@@ -275,19 +275,19 @@ export default function ComparisonSection() {
         .compare-row-group:nth-child(odd) .cr-right { background: #E8F4FE; }
 
         .cr-category {
-            grid-column: 1 / -1;
-    background: #F8FAFC;
-    padding: 9px 28px;
-    border-top: 1px solid #EEF2F7;
-    text-align: left;
+          grid-column: 1 / -1;
+          background: #F8FAFC;
+          padding: 9px 28px;
+          border-top: 1px solid #EEF2F7;
+          text-align: left;
         }
         .cr-category span {
-    font-size: 1vw;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #000;
-    font-family: 'Assistant';
+          font-size: 1vw;
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #000;
+          font-family: 'Assistant';
         }
 
         .cr-left, .cr-right {
@@ -296,7 +296,6 @@ export default function ComparisonSection() {
           align-items: center;
           gap: 10px;
           border-top: 1px solid rgba(0,0,0,0.05);
-          
         }
 
         .cr-icon {
@@ -307,20 +306,19 @@ export default function ComparisonSection() {
         }
 
         .cr-text-bad {
-      font-size: 1.2vw;
-    font-family: 'ASSISTANT';
-    line-height: 1.5;
-    color: #64748B;
-    text-align: left;
-    
+          font-size: 1.2vw;
+          font-family: 'ASSISTANT';
+          line-height: 1.5;
+          color: #64748B;
+          text-align: left;
         }
         .cr-text-good {
-            font-size: 1.2vw;
-    line-height: 1.5;
-    color: #0B1F3A;
-    font-weight: 500;
-    text-align: left;
-    font-family: 'ASSISTANT';
+          font-size: 1.2vw;
+          line-height: 1.5;
+          color: #0B1F3A;
+          font-weight: 500;
+          text-align: left;
+          font-family: 'ASSISTANT';
         }
 
         .cta-btn {
@@ -359,60 +357,54 @@ export default function ComparisonSection() {
           .tabs-inner {
             flex-wrap: wrap !important;
           }
-            .ctab-btn{
-            font-size:3.2vw;
-            }
-            .ctab-btn.active{
-                border-radius: 40px;
-            }
-                  .badge-label-right{
-    font-size: 3.5vw;
-  }
-    .badge-label-left{
-        font-size: 3.5vw;
-
-    }
-        .badge-icon{
+          .ctab-btn {
+            font-size: 3.2vw;
+          }
+          .ctab-btn.active {
+            border-radius: 40px;
+          }
+          .badge-label-right {
+            font-size: 3.5vw;
+          }
+          .badge-label-left {
+            font-size: 3.5vw;
+          }
+          .badge-icon {
             width: 8.4vw;
-    /* height: 6.5vw; */
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    flex-shrink: 0;
-    }
-    .cr-category span{
-        font-size: 3.5vw;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #000;
-    font-family: 'Assistant';
-    }
-    .cr-text-bad{
-        font-size: 3.5vw;
-    }
-        .cr-text-good{
-        font-size: 3.5vw;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+          }
+          .cr-category span {
+            font-size: 3.5vw;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000;
+            font-family: 'Assistant';
+          }
+          .cr-text-bad {
+            font-size: 3.5vw;
+          }
+          .cr-text-good {
+            font-size: 3.5vw;
+          }
         }
-        
-    }
-
       `}</style>
 
             <div className="compare-section">
                 {/* Header */}
                 <div style={{ textAlign: "center", marginBottom: "16px" }}>
-
                     <h2 className="HR_heading">
-                        Microsoft Based CLM 365 vs Standalone CLM Application
+                        Microsoft Native Schedule 365 vs Standalone Scheduling Apps
                     </h2>
 
                     <p className="organizationsText">
-                        See why organizations choose a Microsoft 365-native approach over isolated contract management software.
+                        See why enterprise teams choose a Microsoft 365-native intelligent scheduling system over isolated external calendar tools.
                     </p>
-
                 </div>
 
                 {/* Tabs */}
@@ -441,14 +433,14 @@ export default function ComparisonSection() {
                     {/* Column Headers */}
                     <div className="col-headers">
                         <div className="col-head-left">
-                            <div className="badge-icon" style={{ background: "#E2E8F0" }}>🏢</div>
-                            <span className="badge-label-left">Standalone CLM Application</span>
+                            <div className="badge-icon" style={{ background: "#E2E8F0" }}>🔗</div>
+                            <span className="badge-label-left">Standalone Scheduling Apps (Calendly, etc.)</span>
                         </div>
                         <div className="col-head-right">
                             <div className="badge-icon" style={{ background: "rgba(0,180,216,0.2)" }}>
-                                <img src="https://ik.imagekit.io/cubiclogics/App%20Logos/White-logos/CLM365-White.png" alt="CLM 365" />
+                                <span style={{ fontSize: "18px" }}>📅</span>
                             </div>
-                            <span className="badge-label-right">CLM 365 — Microsoft 365 Native</span>
+                            <span className="badge-label-right">Schedule 365 — Microsoft 365 Native</span>
                             <span className="recommended-pill">Recommended</span>
                         </div>
                     </div>
@@ -473,8 +465,10 @@ export default function ComparisonSection() {
 
                 {/* CTA */}
                 <div style={{ display: "flex", justifyContent: "center", textAlign: "center", marginTop: "40px" }}>
-                    <DemoButtons LMS365="LMS365"
-                        demobtnText="See CLM 365 in Action" />
+                    <DemoButtons
+                        demobtnText="See Schedule 365 in Action"
+                        trailbtnText="Start 14-Day Free Trial"
+                    />
                 </div>
             </div>
         </section>

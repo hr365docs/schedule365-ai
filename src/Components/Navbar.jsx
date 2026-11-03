@@ -5,12 +5,12 @@ import EULA from "./Header and Footer/EULA";
 import Thankyou from "./Thankyou";
 import { CelebrateOffer } from "./CelebrateOffer";
 import ProductsAddon from "./ProductsAddon";
-import LPCLM365 from "./LPCLM365";
+import Schedule365 from "./Schedule365";
 function NavBar() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <LPCLM365 />,
+      element: <Schedule365 />,
     },
     {
       path: "/black-day-offer",
@@ -26,7 +26,7 @@ function NavBar() {
     },
     // {
     //   path: "/sharepoint-contract-management-software",
-    //   element: <LPCLM365 />,
+    //   element: <Schedule365 />,
     //   // loader: "",
     //   // key: "performance-management-365",
     // },

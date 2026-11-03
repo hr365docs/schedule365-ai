@@ -25,7 +25,7 @@ import CyberSecurity from './Utiilities/demo';
 import CustomerSupport from './Utiilities/CustomerSupport';
 import ComparisonSection from './ComparisonSection';
 import CLMClient from './Utiilities/CLMClient';
-import OverviewLPCLM365 from './GlobalMultiple/OverviewLPCLM365';
+import OverviewSchedule365 from './GlobalMultiple/OverviewSchedule365';
 import GlobalFooter from './GlobalMultiple/GlobalFooter';
 
 const getInitialIsFromIndia = () => {
@@ -39,7 +39,7 @@ const getInitialIsFromIndia = () => {
     return false;
 };
 
-function LPCLM365() {
+function Schedule365() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
     const [isFromIndia, setIsFromIndia] = useState(getInitialIsFromIndia);
     const [currentHeroSlide, setCurrentHeroSlide] = useState(0);
@@ -140,48 +140,81 @@ function LPCLM365() {
 
     const featuresEndtoEnd = [
         {
-            title: "AI Contract Review",
-            desc: "Instantly analyze contracts using AI to detect risks, identify clause issues, and compliance gaps while summarizing key insights for faster decisions. ",
-            icon: (<>
-                <div className="feature-icon fi-teal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg></div></>)
-        },
-        {
-            title: "Clause Risk Detection",
-            desc: "Automatically detect risky terms, missing clauses, and non-standard language before contracts are approved or signed to reduce legal and compliance risk. ",
+            title: "AI Availability Engine",
+            desc: "Instantly analyze cross-calendar availability using AI to detect openings, optimize buffer gaps, and resolve conflicts for rapid scheduling decisions.",
             icon: (
-                <>
-                    <div className="feature-icon fi-orange"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div></>
+                <div className="feature-icon fi-teal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
             )
         },
         {
-            title: "Obligation Identification",
-            desc: "Extract obligations, owners, deliverables, timelines, and follow-up actions from signed contracts automatically.",
+            title: "Conflict & Overlap Shield",
+            desc: "Automatically detect double bookings, conflicting holds, and overlapping time slots across all connected calendars before any meeting is confirmed.",
             icon: (
-                <>
-                    <div className="feature-icon fi-purple"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg></div></>
+                <div className="feature-icon fi-orange">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                        <line x1="12" y1="9" x2="12" y2="13"></line>
+                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                </div>
             )
         },
         {
-            title: "Contract Approval Automation",
-            desc: "Streamline contract approvals with structured workflows that reduce delays, improve accountability, and provide full visibility across legal and business teams.",
-            icon: (<><div className="feature-icon fi-green"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
-            </>)
-        },
-        {
-            title: "Faster Contract Creation",
-            desc: "Accelerate contract drafting with guided templates, reusable clauses, and intelligent search across your contract repository to reduce manual effort. ",
+            title: "Autonomous Meeting Agent",
+            desc: "Extract attendee intent, preferred durations, time zones, and scheduling requests straight from incoming emails and chats automatically.",
             icon: (
-                <><div className="feature-icon fi-gold"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div>
-                </>
+                <div className="feature-icon fi-purple">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                    </svg>
+                </div>
             )
         },
         {
-            title: "SharePoint Contract Repository",
-            desc: "Store every agreement in a secure contract repository in SharePoint with centralized access, version control & enterprise-grade security. ",
+            title: "Smart Round-Robin Routing",
+            desc: "Streamline team booking distributions with structured round-robin and collective logic that balances rep workloads and boosts pipeline speed.",
             icon: (
-                <>
-                    <div className="feature-icon fi-navy"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div>
-                </>
+                <div className="feature-icon fi-green">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                </div>
+            )
+        },
+        {
+            title: "Frictionless Booking Pages",
+            desc: "Accelerate conversions with branded booking pages, pre-configured event durations, and dynamic intake qualification forms.",
+            icon: (
+                <div className="feature-icon fi-gold">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+            )
+        },
+        {
+            title: "Native Microsoft 365 Sync",
+            desc: "Store every event, conference room booking, and calendar entry directly inside your Microsoft tenant with enterprise-grade access and security.",
+            icon: (
+                <div className="feature-icon fi-navy">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                </div>
             )
         },
     ];
@@ -259,94 +292,65 @@ function LPCLM365() {
         },
     ];
 
-    const accordionItems = [
+   const accordionItems = [
         {
-            title: '1. Can SharePoint be used for contract management?', content: `Yes. SharePoint can be used as the foundation for contract management. CLM 365 enhances SharePoint with workflows, metadata, AI automation, contract dashboards, renewal alerts, and obligation tracking to turn it into a complete CLM platform.`
+            title: '1. Can Microsoft 365 and Outlook be used for automated scheduling?',
+            content: `Yes. Microsoft 365 and Outlook provide calendar infrastructure, but Schedule 365 enhances them with autonomous AI agents, personalized booking links, team round-robin routing, conflict shields, and automatic Teams meeting link generation into a complete enterprise scheduling platform.`
         },
         {
-            title: `2. How does a CLM 365 App help in managing contracts on the go?`, content: `A CLM 365 App allows users to access, review, and manage contracts directly from their mobile devices. This flexibility ensures that key stakeholders can approve, amend, or monitor contracts anytime, anywhere, which accelerates the contract lifecycle and enhances collaboration. `
+            title: '2. How does Schedule 365 help manage meetings on the go?',
+            content: `Schedule 365 works directly inside Outlook Mobile and Microsoft Teams apps on iOS and Android. Team members and organizers can review incoming bookings, adjust availability, or reschedule meetings anytime without opening separate external tools.`
         },
         {
-            title: `3. Is CLM 365 built on SharePoint?`,
-            content: `Yes. CLM 365 is designed for organizations that use Microsoft 365 and SharePoint for document management, collaboration, and security. It works natively inside your existing environment.`
-        }, {
-            title: '4. How does Microsoft CLM 365 Software integrate with other Microsoft products?',
-            content: `Microsoft CLM 365 Software is designed to integrate smoothly with other Microsoft products, such as Office 365, Dynamics 365, and Azure. This integration allows for a unified platform where contracts can be managed alongside other business processes, enhancing productivity and ensuring data consistency across systems.`
+            title: '3. Is Schedule 365 built natively on Microsoft 365?',
+            content: `Yes. Schedule 365 is designed specifically for organizations using Microsoft 365, Outlook, and Teams. It operates natively inside your existing Microsoft tenant without requiring third-party calendar servers.`
         },
         {
-            title: '5. Does CLM 365 include AI?',
-            content: `Yes. CLM 365 includes AI capabilities for contract creation, clause risk detection, summaries, obligation identification, and commercial term tracking — all within Microsoft 365.`
+            title: '4. How does Schedule 365 integrate with other Microsoft products?',
+            content: `Schedule 365 connects bi-directionally with Outlook calendars, Microsoft Teams meetings and rooms, Microsoft Copilot, Power Automate, and Dynamics 365 via Microsoft Graph API for unified enterprise scheduling workflows.`
         },
         {
-            title: '6. Can CLM 365 send renewal reminders?',
-            content: `Yes. CLM 365 tracks renewal dates, expiry dates, notice periods, and commercial review dates with automated reminders delivered through Outlook and Teams.`
+            title: '5. Does Schedule 365 include an autonomous AI Agent?',
+            content: `Yes. Schedule 365 features an intelligent AI agent that understands natural language email requests, identifies mutually open time slots across different time zones, drafts replies, and confirms bookings automatically.`
         },
         {
-            title: '7. Who should use SharePoint contract management software?',
-            content: `CLM 365 is ideal for legal, procurement, sales, finance, and operations teams that need to manage contracts securely inside Microsoft 365 without learning a new platform.`
+            title: '6. Can Schedule 365 send automated meeting reminders and reduce no-shows?',
+            content: `Yes. Automated confirmation emails, calendar invites, and customizable pre-meeting reminder notifications are sent to attendees directly from your own corporate domain via Outlook and Teams.`
         },
         {
-            title: '8. Why do organizations choose SharePoint for contract management?',
-            content: `Organizations choose SharePoint because it provides a centralized repository to securely store and organize contracts in one place. Built-in version control tracks every document change, helps restore previous versions, and keeps teams working from a single source of truth throughout the contract lifecycle. `
+            title: '7. Who should use Schedule 365 intelligent scheduling software?',
+            content: `Schedule 365 is built for sales, recruitment, customer success, executive management, and IT teams that need automated meeting orchestration without compromising enterprise Microsoft governance.`
         },
         {
-            title: '9.How is contract search more effective in SharePoint?',
-            content: `SharePoint improves contract search by using metadata to classify contracts by vendor, contract type, department, status, or renewal date. Combined with SharePoint Search, users can quickly find contracts, clauses, and key information from a centralized Contract Repository, reducing search time and improving productivity. `
+            title: '8. How does Schedule 365 prevent double bookings and calendar conflicts?',
+            content: `Schedule 365 checks real-time availability across internal calendars, resource mailboxes, and focus-time holds. It applies customizable buffer times between appointments to eliminate overlapping bookings.`
         },
         {
-            title: '10. Can I build contract management workflows without coding in SharePoint?',
-            content: `Yes. SharePoint and Microsoft Power Automate let you build approval workflows without coding. Automate contract requests, reviews, approvals, and renewals while improving collaboration across legal, procurement, and business teams within Microsoft 365. `
+            title: '9. Can I build custom scheduling workflows without coding?',
+            content: `Yes. Schedule 365 integrates with Microsoft Power Automate, allowing you to trigger post-meeting follow-ups, sync attendee details with your CRM, and update team channels without writing code.`
         },
         {
-            title: '11. How is security managed for contract management in SharePoint?',
-            content: `SharePoint protects contracts with enterprise-grade security, role-based permissions, and Microsoft 365 compliance features. Organizations can control document access, secure sensitive contracts, and use audit logs to track document edits and user activity. This helps maintain transparency, accountability, and compliance throughout the contract lifecycle.`
+            title: '10. How is data security and compliance handled in Schedule 365?',
+            content: `Schedule 365 uses tenant-bound security where all meeting data and calendar metadata remain inside your Microsoft 365 environment. It inherits your Entra ID (Azure AD) SSO, role-based access, and Purview audit logging.`
         },
         {
-            title: '12. Does CLM 365 create a separate repository?',
-            content: `No. CLM 365 uses your existing SharePoint environment as a secure Contract Repository instead of creating a separate database. This approach simplifies Contract lifecycle Management, improves document governance, and allows legal, procurement, and business teams to work from a single source of truth.`
+            title: '11. Does Schedule 365 store our calendar and attendee data externally?',
+            content: `No. Schedule 365 operates within your existing Microsoft 365 boundary. Meeting records, attendee emails, and calendar entries remain in your Exchange and Outlook systems, eliminating third-party data silos.`
         },
         {
-            title: '13. How does SharePoint versioning work?',
-            content: `SharePoint automatically maintains version history whenever a contract is updated. Teams can review previous versions, compare changes, and restore earlier copies when needed.  `
+            title: '12. Does Schedule 365 work with Microsoft Copilot?',
+            content: `Yes. Schedule 365 is Copilot-ready. You can prompt Microsoft Copilot in natural language to check team availability, schedule cross-departmental syncs, and summarize upcoming meetings directly inside your workflow.`
         },
         {
-            title: '14. Does it support SharePoint Online?',
-            content: `Yes. CLM 365 is fully compatible with SharePoint Online and integrates seamlessly with Microsoft 365 apps, including MS Teams, Outlook, and Power Automate. Organizations can manage contracts, automate contract approval workflows, and securely collaborate without leaving the Microsoft ecosystem. `
+            title: '13. Is our calendar data sent to public AI services like ChatGPT?',
+            content: `No. Schedule 365 does not transmit calendar or attendee data to public AI models. All AI tasks utilize secure enterprise models, such as Azure OpenAI, governed strictly by your corporate data protection policies.`
         },
         {
-            title: '15. Can Copilot helps in searching contracts?',
-            content: `Yes. When integrated with Microsoft Copilot, users can search contracts using natural language to quickly find clauses, obligations, renewal dates, and other key information stored in your repository. `
+            title: '14. Can Schedule 365 route meetings via Round-Robin and Collective Panels?',
+            content: `Yes. You can route inbound prospect calls evenly among sales representatives using smart round-robin rules, or schedule collective panel interviews where every required host must be mutually available.`
         },
         {
-            title: '16. Can we store data in our Microsoft 365 tenant? ',
-            content: `Yes. CLM 365 stores contracts within your own Microsoft 365 tenant, allowing organizations to retain full ownership of their data. This supports secure contract management workflow and simplifies governance.`
-        },
-        {
-            title: '17. How securely are my contracts managed inside CLM 365?',
-            content: `CLM 365 protects contracts with enterprise-grade security, role-based permissions, and Microsoft 365 compliance features. All contract data is stored securely within your own Microsoft 365 tenant, ensuring you retain complete ownership and control `
-        },
-        {
-            title: '18. Is contract data sent to ChatGPT?',
-            content: `No, CLM 365 does not send your contract data to public AI services such as ChatGPT unless you explicitly configure an approved AI provider. You control which AI service is used, and all AI requests follow your organization’s security and governance policies.`
-        },
-        {
-            title: '19. Does AI train on our contracts?',
-            content: `No. Your contracts are never used to train public AI models. CLM 365 does not processes contract content to generate the requested response (such as summaries, clause explanations, or risk analysis). Your data remains under your organization’s control and ownership and within your tenant.`
-        },
-        {
-            title: '20. Does it work with Microsoft Copilot?',
-            content: `Yes. CLM 365 is built natively for Microsoft 365 and integrates with Microsoft Teams, SharePoint, Outlook, and Microsoft Copilot. By storing contracts within SharePoint, CLM 365 enables Copilot to work with your governed contract data while respecting Microsoft 365 permissions.`
-        },
-        {
-            title: '21. Can we use Azure OpenAI?',
-            content: `Yes. CLM 365 supports Azure OpenAI, allowing organizations to leverage enterprise-grade AI services within Microsoft’s secure cloud. You can also configure other supported AI providers based on your organization’s security, compliance, and deployment requirements.`
-        },
-        {
-            title: '22. Where is our contract data stored?',
-            content: `Your contracts remain in your Microsoft 365 environment. CLM 365 stores contract documents in your SharePoint tenant and respects your existing Microsoft 365 security, permissions, retention, and compliance policies. Customer content is not copied into a separate CLM repository unless you choose a specific deployment option.`
-        },
-        {
-            title: '23. Which currency are the prices listed in?',
+            title: '15. Which currency are the prices listed in?',
             content: isFromIndia
                 ? 'All prices are listed in INR.'
                 : 'All prices are listed in USD.'
@@ -355,69 +359,99 @@ function LPCLM365() {
 
     const tabs = [
         {
-            id: 6, title: 'AI Powered ', Heading: 'Simplify Contract Management With AI', content: (
+            id: 6,
+            title: 'AI Powered',
+            Heading: 'Simplify Enterprise Scheduling With AI',
+            content: (
                 <ul>
-                    <li>Instantly use AI to extract key terms, obligations, and risks from any contract for actionable insights in seconds.</li>
-                    <li>Leverage AI agent to retrieve comprehensive counterparty information, including contact details, contract history, and compliance records.</li>
-                    <li>Manage, update, and collaborate on contracts directly within Outlook, Teams, or Word.</li>
-                    <li>Use Microsoft Copilot AI to summarize contracts, suggest edits, and highlight essential terms within your workflow.</li>
-                    <li id='Comparison'>Link related agreements under a primary contract for better visibility and streamlined management.</li>
+                    <li>Use natural language AI agents to find mutual availability and book meetings instantly.</li>
+                    <li>Let AI scan multi-attendee schedules across time zones to eliminate scheduling friction.</li>
+                    <li>Coordinate, reschedule, and approve calendar bookings directly within Outlook and Teams.</li>
+                    <li>Leverage Microsoft Copilot AI to draft invites, summarize agendas, and resolve conflicts.</li>
+                    <li id='Comparison'>Group multi-host panels and collective round-robins under unified booking workflows.</li>
+                    <li>Autonomous calendar rebalancing prioritizes high-impact meetings and protects focus hours.</li>
+                    <li>Intelligent attendee intent detection suggests ideal meeting durations and appropriate formats.</li>
                 </ul>
             ),
             image: 'https://ik.imagekit.io/apps365/Lp-pages/CLM-ai-image.png'
         },
         {
-            id: 1, title: 'Microsoft Ecosystem', Heading: 'Effortless Integration with Microsoft Ecosystem: CLM 365 System', content: (
+            id: 1,
+            title: 'Microsoft Ecosystem',
+            Heading: 'Effortless Integration with Microsoft Ecosystem: Schedule 365 System',
+            content: (
                 <ul>
-                    <li>Maximize your existing Microsoft ecosystem by incorporating our advanced CLM 365 system.</li>
-                    <li>This intuitive, cloud-based software integrates smoothly with Microsoft 365, boosting your productivity and efficiency.</li>
-                    <li>Utilizing the power of SharePoint and functioning as a Microsoft Teams app, it offers a centralized hub for all your CLM 365 needs.</li>
-                    <li>Seamless synchronization with Microsoft Outlook for streamlined contract tracking and notifications.</li>
+                    <li>Maximize your existing Microsoft ecosystem with native Schedule 365 calendar intelligence.</li>
+                    <li>Intuitive, cloud-based scheduling built for Microsoft 365 to elevate workplace productivity.</li>
+                    <li>Deploys as a native Microsoft Teams and Outlook add-in for centralized meeting management.</li>
+                    <li>Bi-directional real-time synchronization with Outlook calendars prevents double bookings.</li>
+                    <li>Automate post-meeting workflows with direct Microsoft Power Automate and Graph connectors.</li>
+                    <li>Sync physical meeting room resources and equipment directly via Microsoft Exchange assets.</li>
                 </ul>
             ),
             image: 'https://ik.imagekit.io/apps365/Lp-pages/CLM%202.webp'
         },
         {
-            id: 2, title: 'Contract Operations', Heading: 'Streamlined Contract Operations: SharePoint CLM 365 app', content: (
+            id: 2,
+            title: 'Scheduling Operations',
+            Heading: 'Streamlined Meeting Operations: Outlook Schedule 365 App',
+            content: (
                 <ul>
-                    <li>Microsoft CLM 365 software simplifies the entire contract lifecycle, integrating seamlessly with DocuSign, e-sign, and your Microsoft environment.</li>
-                    <li>SharePoint CLM 365 provides exceptional security, control, and visibility.</li>
-                    <li>It features smart draft-to-signature workflows, customizable scenarios, and automated alerts for timely obligations.</li>
-                    <li>Enhanced collaboration through real-time updates and shared access within Microsoft Teams.</li>
-                    <li>CLM 365 lets users redline contracts, track changes, add comments, and manage versions directly in Microsoft Word.</li>
-                </ul>
-            ), image: 'https://ik.imagekit.io/apps365/Lp-pages/CLM%203.webp'
-        },
-        {
-            id: 3, title: 'User-centered', Heading: 'User-centered Approach to CLM 365 tool Design', content: (
-                <ul>
-                    <li>Using Microsoft Fluent UI, our CLM 365 application provides an intuitive interface for easy navigation and minimal learning curve.</li>
-                    <li>Enhanced by AI, it offers dynamic contract interactions and an adaptable workflow.</li>
-                    <li>AI-driven document comparison ensures precise tracking of changes, improving accuracy and efficiency in reviewing modifications.</li>
-                    <li>Personalized user settings allow customization of dashboards and notifications to suit individual preferences.</li>
-                </ul>
-            ), image: 'https://ik.imagekit.io/zn4au2jftpm5/Apps365/Teams/CLM%20365%20teams_yFI8NzGjap.png?updatedAt=1725450649581'
-        },
-        {
-            id: 4, title: 'Contract Lifecycle', Heading: 'Contract Lifecycle Management in SharePoint', content: (
-                <ul>
-                    <li>Manage every stage of the contract lifecycle, from drafting and review to approval, execution, and renewal tracking in SharePoint.</li>
-                    <li>CLM 365 is AI-powered contract lifecycle management software that centralizes contracts, workflows, obligations, and reporting within Microsoft 365.</li>
-                    <li>Simplify SharePoint contract lifecycle management with AI-assisted reviews, automated approvals, obligation tracking, and renewal reminders.</li>
+                    <li>Automate the full meeting lifecycle with dynamic links, Teams video URLs, and room booking.</li>
+                    <li>Smart round-robin distribution to route leads and client calls to the right team members.</li>
+                    <li>Automated calendar holds, customizable buffer times, and instant reschedule handling.</li>
+                    <li>Real-time notifications, attendee reminders, and status updates directly in Microsoft Teams.</li>
+                    <li>Manage availability windows, maximum daily meeting caps, and focus-time locks effortlessly.</li>
+                    <li>Custom routing logic routes VIP prospects to senior account reps based on form responses.</li>
+                    <li>Centralized administrative overrides allow managers to reassign bookings during team leaves.</li>
                 </ul>
             ),
             image: 'https://ik.imagekit.io/apps365/Lp-pages/CLM%203.webp'
         },
         {
-            id: 5, title: 'Security', Heading: 'Enterprise-Grade Security and Compliance: CLM 365 Software', content: (
+            id: 3,
+            title: 'User-centered',
+            Heading: 'User-centered Approach to Schedule 365 Tool Design',
+            content: (
                 <ul>
-                    <li>Detailed Audit Trails</li>
-                    <li>Precision Access Control</li>
-                    <li>Tenant-Specific Central Repository</li>
-                    <li>Flexible Custom Reporting</li>
-                    <li>Proactive Alerts and AI-Driven Notifications</li>
-                    <li>Top-Tier Security and Privacy Standards</li>
-                    <li>Built-in Digital Signatures</li>
+                    <li>Built with Microsoft Fluent UI for a consistent, seamless experience with zero learning curve.</li>
+                    <li>Frictionless booking pages branded with custom themes, logos, and custom domain links.</li>
+                    <li>Smart timezone detection automatically displays local times for all external attendees.</li>
+                    <li>Customizable booking forms collect attendee details and qualifications prior to confirmation.</li>
+                    <li>One-click quick reschedule buttons let guests adjust meetings without login requirements.</li>
+                    <li>Responsive multi-language localization detects attendee browser locale for seamless scheduling.</li>
+                </ul>
+            ),
+            image: 'https://ik.imagekit.io/zn4au2jftpm5/Apps365/Teams/CLM%20365%20teams_yFI8NzGjap.png?updatedAt=1725450649581'
+        },
+        {
+            id: 4,
+            title: 'Meeting Lifecycle',
+            Heading: 'End-to-End Meeting Lifecycle Management in Microsoft 365',
+            content: (
+                <ul>
+                    <li>Orchestrate every phase from booking request and attendee qualification to post-call follow-ups.</li>
+                    <li>Centralize scheduling links, collective hosts, custom questions, and analytics in Microsoft 365.</li>
+                    <li>Automate pre-meeting agendas, attendee reminders, and post-meeting follow-up workflows.</li>
+                    <li>Capture pre-meeting intake notes directly into associated CRM and SharePoint meeting cards.</li>
+                    <li>Generate comprehensive no-show tracking, attendance logs, and cancellation reason reports.</li>
+                </ul>
+            ),
+            image: 'https://ik.imagekit.io/apps365/Lp-pages/CLM%203.webp'
+        },
+        {
+            id: 5,
+            title: 'Security',
+            Heading: 'Enterprise-Grade Security and Compliance: Schedule 365 Software',
+            content: (
+                <ul>
+                    <li>Tenant-Bound Architecture (Zero Third-Party Data Storage)</li>
+                    <li>Role-Based Access Control and Granular Admin Permissions</li>
+                    <li>Comprehensive Audit Trails for All Scheduled Events</li>
+                    <li>OAuth 2.0 and Single Sign-On (SSO) via Microsoft Entra ID</li>
+                    <li>Automated No-Show Tracking and AI-Driven Notifications</li>
+                    <li>Strict Enterprise Privacy and Global Compliance Standards</li>
+                    <li>Automated Secure Microsoft Teams Meeting Links</li>
                 </ul>
             ),
             image: 'https://ik.imagekit.io/zn4au2jftpm5/Apps365/Teams/CLM%20365%20teams_yFI8NzGjap.png?updatedAt=1725450649581'
@@ -427,15 +461,15 @@ function LPCLM365() {
     const Boxs = [
         {
             image: "https://ik.imagekit.io/apps365/Lp-pages/No%20duplicate%20document%20repositories.svg",
-            text: "No duplicate document repositories"
+            text: "No external calendar silos"
         },
         {
             image: "https://ik.imagekit.io/apps365/Lp-pages/Role%20based%20permissions.svg",
-            text: "Role based permissions"
+            text: "Role-based access permissions"
         },
         {
             image: "https://ik.imagekit.io/apps365/Lp-pages/Microsoft%20Teams%20&%20Outlook%20integration.svg",
-            text: "Microsoft Teams & Outlook integration"
+            text: "Native Teams & Outlook sync"
         },
         {
             image: "https://ik.imagekit.io/apps365/Lp-pages/Microsoft%20365%20compliance.svg",
@@ -447,30 +481,30 @@ function LPCLM365() {
         },
         {
             image: "https://ik.imagekit.io/apps365/Lp-pages/Centralized%20contract%20repository.svg",
-            text: "Centralized contract repository"
+            text: "Centralized meeting governance"
         },
     ];
 
     const workBoxs = [
         {
             image: "https://ik.imagekit.io/cubiclogics/Apps365/CLM/Approval-through-Emails.svg?updatedAt=1768997946170",
-            heading: "Review & Approvals",
-            text: "Store contracts in a secure SharePoint Contract Repository. Route contracts through approval workflows while AI agents review every clause and highlight key terms for faster decisions."
+            heading: "Availability & Booking",
+            text: "Sync real-time calendar availability directly within Microsoft 365. Share personalized booking links or route meetings through automated round-robin rules with zero calendar overlap."
         },
         {
             image: "https://ik.imagekit.io/cubiclogics/Apps365/CLM/Role-Based%20Security.svg?updatedAt=1768996193300",
-            heading: "Search & Retrieve",
-            text: "Search contracts by name, vendor, customer, or keywords and retrieve the exact contracts you need within minutes."
+            heading: "Smart Conflict Detection",
+            text: "Detect potential double-bookings, holiday clashes, and timezone discrepancies across multi-host calendars instantly to confirm meetings without manual back-and-forth."
         },
         {
             image: "https://ik.imagekit.io/cubiclogics/Apps365/CLM/technology.webp?updatedAt=1765798708952",
-            heading: "AI Clause Summary",
-            text: "AI reviews contract clauses, summarizes agreements, identifies risks, and extracts key terms before approval. Instantly search contracts with Microsoft Copilot to find important clauses, obligations, and contract details."
+            heading: "AI Scheduling Assistant",
+            text: "AI parses scheduling intent from emails and chats, proposes open time slots, drafts calendar invitations, and coordinates multi-attendee schedules automatically with Microsoft Copilot integration."
         },
         {
             image: "https://ik.imagekit.io/cubiclogics/Apps365/CLM/Operational%20Efficiency.webp?updatedAt=1765803725122",
-            heading: "Renewal Tracking",
-            text: "Stay ahead of every contract renewal with automated reminders. Avoid unexpected expirations and make renewal decisions with confidence."
+            heading: "Reminders & Follow-Ups",
+            text: "Automate pre-meeting notifications, Microsoft Teams video links, and agenda reminders. Minimize no-shows and seamlessly handle reschedules or cancellations."
         },
     ];
 
@@ -493,36 +527,37 @@ function LPCLM365() {
     );
 
     const challenges = [
-        "Contracts scattered across folders and departments",
-        "Multiple versions of the same agreement causing confusion",
-        "Manual follow-ups for approvals slowing deals down",
-        "Missed renewal dates and costly notice periods",
-        "No lifecycle visibility from request to renewal",
+        "Endless back-and-forth emails finding mutual meeting openings",
+        "Double bookings and timezone mismatches confusing clients",
+        "Manual follow-ups, rescheduling overhead, and no-shows",
+        "Fragmented booking tools that bypass enterprise security",
+        "No visibility into cross-team meeting distribution",
     ];
 
     const solutions = [
-        "Structured contract repository with metadata",
-        "AI-powered clause risk and obligation detection",
-        "Automated approval workflows and routing",
-        "Automated renewal and expiry reminders",
-        "Dashboards for full lifecycle visibility",
+        "Native Outlook and Teams bi-directional calendar synchronization",
+        "AI-powered meeting agent to negotiate directly via email",
+        "Automated round-robin, multi-host, and collective scheduling",
+        "Automated booking confirmations, invites, and pre-meeting reminders",
+        "Centralized dashboards for team meeting load analytics",
     ];
 
-    const AI_steps = [
-        "Ask questions in natural language",
-        "Summarize 300-page agreements in seconds",
-        "Find renewal dates, obligations, and key terms instantly",
-        "Explain legal clauses in plain language",
-        "Recommend next actions",
-        "Surface contractual obligations automatically",
+
+    const agentCapabilities = [
+        "Coordinate meetings using simple natural language prompts",
+        "Scan multi-calendar availability across external time zones instantly",
+        "Resolve scheduling conflicts and protect focus time automatically",
+        "Draft personalized email booking invites and replies",
+        "Trigger automated reminders, agenda distribution, and meeting links",
+        "Orchestrate complex round-robin and multi-host team routing"
     ];
 
-             // Define features array for Schedule 365
-                const features = [
-                "Built inside Microsoft 365",
-                "AI contract & meeting agents",
-                "Automated scheduling workflows"
-                ];
+    // Define features array for Schedule 365
+    const features = [
+        "Built inside Microsoft 365",
+        "AI contract & meeting agents",
+        "Automated scheduling workflows"
+    ];
     return (
         <>
             <HelmetProvider>
@@ -551,7 +586,7 @@ function LPCLM365() {
 
                                 <p className="hero-desc">
                                     <strong>Stop losing time to back-and-forth emails, double-bookings, and disconnected calendar tools. </strong>
-                                   <br/> Schedule 365 transforms Microsoft 365 and Outlook into an autonomous, AI-driven scheduling engine. Coordinate internal cross-team syncs, client meetings, and multi-timezone availability without ever leaving your Microsoft ecosystem.
+                                    <br /> Schedule 365 transforms Microsoft 365 and Outlook into an autonomous, AI-driven scheduling engine. Coordinate internal cross-team syncs, client meetings, and multi-timezone availability without ever leaving your Microsoft ecosystem.
                                 </p>
 
                                 <div className="hero-cta">
@@ -584,12 +619,11 @@ function LPCLM365() {
                         <div className="sharepoint-container">
                             <div className="sharepoint-header">
                                 <h2 className='HR_heading'>
-                                    SharePoint Stores Contracts. CLM 365 Simplifies with AI
+                                    Outlook Holds Your Calendar. Schedule 365 Automates It with AI
                                 </h2>
 
                                 <p>
-                                    Many teams already store contracts in SharePoint. But storage
-                                    alone doesn't solve contract management.
+                                    Most teams already use Outlook calendars. But having a calendar doesn’t solve enterprise scheduling chaos.
                                 </p>
                             </div>
 
@@ -608,14 +642,11 @@ function LPCLM365() {
 
                                 <div className="sharepoint-right">
                                     <h3>
-                                        CLM 365 Adds the Structure, AI, and Automation Your
-                                        Contracts Need
+                                        Schedule 365 Adds the Intelligence, AI Agents, and Automation Your Calendars Need
                                     </h3>
 
                                     <p>
-                                        Instead of SharePoint as a storage location, CLM 365 adds
-                                        metadata, AI extraction, approval workflows, renewal alerts,
-                                        obligation tracking, and secure collaboration.
+                                        Instead of Outlook being a passive viewer, Schedule 365 adds real-time AI negotiation, team round-robin routing, automated conflict handling, and enterprise privacy inside Microsoft 365.
                                     </p>
 
                                     <ul>
@@ -640,18 +671,18 @@ function LPCLM365() {
                         <div className="Meet_AI_Container">
                             <div className="sharepoint-header">
                                 <h2 className='HR_heading'>
-                                    Meet CLM AI Agent
+                                    Meet Schedule AI Agent
                                 </h2>
 
                                 <p>
-                                    <strong>Your Intelligent Contract Assistant Inside Microsoft 365</strong><br />
-                                    Built into SharePoint Contract Management, CLM AI Agent helps legal, procurement, and business teams review contracts, search agreements, explain clauses, summarize documents, and retrieve contract information using natural language all without leaving Microsoft 365. Whether you’re reviewing a new agreement or searching your contract repository, simply ask a question and get instant, context-aware answers powered by Agentic AI.
+                                    <strong>Your Intelligent Scheduling Assistant Inside Microsoft 365</strong><br />
+                                    Built directly into Microsoft 365, Schedule AI Agent helps sales, hiring, customer success, and executive teams coordinate calendars, resolve double bookings, check real-time availability, and schedule meetings using natural language without leaving Outlook or Teams. Whether coordinating cross-timezone client syncs or scheduling multi-attendee reviews, simply ask in plain English and let autonomous Agentic AI handle the entire workflow.
                                 </p>
                             </div>
                             <div className="sharepoint-content">
                                 <div className="content-left">
                                     <h3 className="Agent-heading">AI Agent Capabilities</h3>
-                                    {AI_steps.map((item, index) => (
+                                    {agentCapabilities.map((item, index) => (
                                         <p key={index}>
                                             <span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
                                             {item}
@@ -661,7 +692,7 @@ function LPCLM365() {
                                 <div className="content-right">
                                     <div className="tab-image">
                                         <img
-                                            src="https://ik.imagekit.io/apps365/Lp-pages/CLM-agent-image.avif"
+                                            src="https://ik.imagekit.io/apps365/Lp-pages/Schedule365%20AI%20Agent.webp"
                                             alt="CLM Agent"
                                             onClick={() => setShowModal(true)}
                                         />
@@ -688,7 +719,7 @@ function LPCLM365() {
                                         </span>
 
                                         <img
-                                            src="https://ik.imagekit.io/apps365/Lp-pages/CLM-agent-image.avif"
+                                            src="https://ik.imagekit.io/apps365/Lp-pages/Schedule365%20AI%20Agent.webp"
                                             alt="CLM Agent"
                                             className="modal-image"
                                             onClick={(e) => e.stopPropagation()}
@@ -696,12 +727,7 @@ function LPCLM365() {
                                     </div>
                                 )}
                             </div>
-                            <div className="HR_PrimaryButton">
-                                <div style={{ display: "flex", justifyContent: "center", textAlign: "center", marginTop: "40px" }}>
-                                    <DemoButtons LMS365="LMS365"
-                                        demobtnText="See CLM 365 in Action" />
-                                </div>
-                            </div>
+
                         </div>
                     </section>
 
@@ -712,17 +738,17 @@ function LPCLM365() {
                     <div className="why-choose-container">
                         <div className="sharepoint-header">
                             <h2 className='HR_heading'>
-                                Why Choose SharePoint for Contract Management?
+                                Why Choose Microsoft 365 for Smart Scheduling?
                             </h2>
 
                             <p>
-                                Stop Managing Contracts Across Multiple Systems. CLM 365 keeps every contract in your Microsoft 365 tenant, bringing together a secure contract repository, approval workflows and Microsoft 365 capabilities in one connected platform.
+                                Stop Managing Appointments Across Disconnected Third-Party Systems. Schedule 365 keeps every meeting, invite, and calendar entry secure inside your Microsoft 365 tenant, combining native Outlook integration, Teams automation, and enterprise governance into one unified platform.
                             </p>
                         </div>
                         <div className="why-choose-boxs">
                             {Boxs.map((data, index) => (
                                 <div className='boxs' key={index}>
-                                    <img decoding="async" src={data.image} title="" alt="clm" loading="lazy" />
+                                    <img decoding="async" src={data.image} title="" alt="schedule365" loading="lazy" />
                                     <p>{data.text}</p>
                                 </div>
                             ))}
@@ -733,10 +759,12 @@ function LPCLM365() {
                     <section className="contract-end-to-end">
                         <div className="contract-container">
                             <div className="contract-heading">
-                                <h2 className='HR_heading'>Everything You Need to Manage Contracts with Clarity and Control</h2>
+                                <h2 className='HR_heading'>
+                                    Everything You Need to Orchestrate Meetings with Clarity and Control
+                                </h2>
 
                                 <p>
-                                    Built inside Microsoft 365 to centralize contracts, automate workflows, redlining and manage the complete contract lifecycle without leaving SharePoint, Teams or Outlook
+                                    Built inside Microsoft 365 to centralize availability, automate meeting workflows, and manage the complete scheduling lifecycle without leaving Outlook or Teams.
                                 </p>
                             </div>
 
@@ -759,35 +787,34 @@ function LPCLM365() {
                         </div>
                     </section>
 
-                    <OverviewLPCLM365 MainHeading="Microsoft 365 Contract Management — MS Teams, SharePoint, Outlook, Copilot & Agentic AI Built into CLM 365" />
+                    <OverviewSchedule365 MainHeading="Microsoft 365 Meeting Scheduling — MS Teams, Outlook, Copilot & Agentic AI Built into Schedule 365" />
                 </div>
 
                 <div className='work-section'>
                     <div className="sharepoint-header">
                         <h2 className='HR_heading'>
-                            How SharePoint Contract Management Works?
+                            How Schedule 365 Intelligent Scheduling Works?
                         </h2>
 
                         <p>
-                            CLM 365 brings every stage of contract management together in one connected workflow from contract organization and approvals to AI-assisted review, obligation tracking and renewal management all within Microsoft 365 environment.
+                            Schedule 365 unifies every stage of meeting orchestration into one seamless workflow—from real-time calendar availability and team routing to AI-driven negotiation, reminder automation, and post-meeting follow-ups, all natively within your Microsoft 365 environment.
                         </p>
                     </div>
                     <div className='work-info'>
                         {workBoxs.map((item, index) => (
                             <div className='work-box' key={index}>
-                                <img decoding="async" src={item.image} title="" alt="" loading="lazy"></img>
+                                <img decoding="async" src={item.image} title={item.heading} alt={item.heading} loading="lazy" />
                                 <h3>{item.heading}</h3>
                                 <p>{item.text}</p>
                             </div>
                         ))}
                     </div>
                 </div>
-
                 <div id="comparison" className="IdChanges"></div>
                 <ComparisonSection />
 
-                <div id="client" className="IdChanges"></div>
-                <div className='HR_whitesection'>
+                {/* <div id="client" className="IdChanges"></div> */}
+                {/* <div className='HR_whitesection'>
                     <h2 className='HR_heading HR_MT'>Our Clients</h2>
                     <div className='HR_MT'>
                         <CLMClient />
@@ -821,7 +848,7 @@ function LPCLM365() {
                             </div>
                         </div>
                     </section>
-                </div>
+                </div> */}
 
                 <div id="integration" className="IdChangesIntegration"></div>
                 <div className='cybersection'>
@@ -831,14 +858,14 @@ function LPCLM365() {
 
                 <CustomerSupport />
 
-                <div className='HR_MT HR_whitesection'>
+                {/* <div className='HR_MT HR_whitesection'>
                     <div className="HR_MT">
                         <div>
                             <h2 className='HR_heading HR_MT' id="pricing">CLM 365 - Contract Management Plans</h2>
                             <Plans plans={planData} isStandardPlan={false} appName="CLM 365 - Contract Management" />
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <Azuer userCount={"50+"} />
                 <span className='privacytext'></span>
@@ -846,17 +873,16 @@ function LPCLM365() {
                 <section className="manage-footer-content">
                     <div className="manage-footer-container">
                         <h2 className="manage-footer-title">
-                            Ready to Manage Contracts Inside SharePoint?
+                            Ready to Automate Scheduling Inside Microsoft 365?
                         </h2>
 
                         <p className="manage-footer-description">
-                            Move from scattered contract files to a structured, AI-powered
-                            contract management platform — built inside Microsoft 365.
+                            Move from back-and-forth emails and fragmented calendar links to an autonomous, AI-powered meeting orchestration platform — built natively inside Microsoft 365.
                         </p>
                         <div style={{ display: "flex", justifyContent: "center", padding: "2vw 0vw" }}>
                             <DemoButtons
                                 isreverse={true}
-                                demobtnText="Book a CLM 365 Demo"
+                                demobtnText="Book a Schedule 365 Demo"
                                 trailbtnText="Talk to Sales"
                             />
                         </div>
@@ -877,4 +903,4 @@ function LPCLM365() {
     );
 }
 
-export default LPCLM365;
+export default Schedule365;
