@@ -36,11 +36,11 @@ function OverviewSchedule365(props) {
     <div style={{ padding: "3vw" }} className="overviewsection">
       <h2 className="HR_heading">
         {props.MainHeading ||
-          "Microsoft 365 Meeting Scheduling — MS Teams, Outlook, Copilot & Agentic AI Built into Schedule 365"}
+          "Intelligent Outlook Meeting Scheduling — AI-Powered Calendar Automation Built into Schedule 365"}
       </h2>
       <p>
         {props.MainDescription ||
-          "Track, coordinate, and orchestrate your meetings effortlessly with our AI-powered Microsoft 365 scheduling system. With automated workflows and intelligent conflict resolution, calendar management is streamlined, letting your teams focus on high-impact conversations."}
+          "Track, coordinate, and orchestrate your meetings effortlessly with our AI-powered Outlook scheduling system. With automated email workflows and intelligent conflict resolution, calendar management is streamlined, letting your teams focus on high-impact conversations."}
       </p>
 
       <div style={{ position: "relative" }}>

@@ -153,7 +153,7 @@ function Schedule365() {
         },
         {
             title: "Conflict & Overlap Shield",
-            desc: "Automatically detect double bookings, conflicting holds, and overlapping time slots across all connected calendars before any meeting is confirmed.",
+            desc: "Automatically detect double bookings, conflicting holds, and overlapping time slots across all connected Outlook calendars before any meeting is confirmed.",
             icon: (
                 <div className="feature-icon fi-orange">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -166,7 +166,7 @@ function Schedule365() {
         },
         {
             title: "Autonomous Meeting Agent",
-            desc: "Extract attendee intent, preferred durations, time zones, and scheduling requests straight from incoming emails and chats automatically.",
+            desc: "Extract attendee intent, preferred durations, time zones, and meeting requests straight from incoming Outlook emails and chats automatically.",
             icon: (
                 <div className="feature-icon fi-purple">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -180,7 +180,7 @@ function Schedule365() {
         },
         {
             title: "Smart Round-Robin Routing",
-            desc: "Streamline team booking distributions with structured round-robin and collective logic that balances rep workloads and boosts pipeline speed.",
+            desc: "Streamline team booking distributions with structured round-robin and collective logic that balances rep workloads and accelerates meeting bookings.",
             icon: (
                 <div className="feature-icon fi-green">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -204,8 +204,8 @@ function Schedule365() {
             )
         },
         {
-            title: "Native Microsoft 365 Sync",
-            desc: "Store every event, conference room booking, and calendar entry directly inside your Microsoft tenant with enterprise-grade access and security.",
+            title: "Native Outlook Calendar Sync",
+            desc: "Sync every event, conference room booking, and calendar entry directly inside Outlook with enterprise-grade access and tenant security.",
             icon: (
                 <div className="feature-icon fi-navy">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -292,7 +292,7 @@ function Schedule365() {
         },
     ];
 
-   const accordionItems = [
+    const accordionItems = [
         {
             title: '1. Can Microsoft 365 and Outlook be used for automated scheduling?',
             content: `Yes. Microsoft 365 and Outlook provide calendar infrastructure, but Schedule 365 enhances them with autonomous AI agents, personalized booking links, team round-robin routing, conflict shields, and automatic Teams meeting link generation into a complete enterprise scheduling platform.`
@@ -366,8 +366,8 @@ function Schedule365() {
                 <ul>
                     <li>Use natural language AI agents to find mutual availability and book meetings instantly.</li>
                     <li>Let AI scan multi-attendee schedules across time zones to eliminate scheduling friction.</li>
-                    <li>Coordinate, reschedule, and approve calendar bookings directly within Outlook and Teams.</li>
-                    <li>Leverage Microsoft Copilot AI to draft invites, summarize agendas, and resolve conflicts.</li>
+                    <li>Coordinate, reschedule, and approve calendar bookings directly within Outlook.</li>
+                    <li>Leverage AI to draft invites, summarize agendas, and resolve calendar conflicts.</li>
                     <li id='Comparison'>Group multi-host panels and collective round-robins under unified booking workflows.</li>
                     <li>Autonomous calendar rebalancing prioritizes high-impact meetings and protects focus hours.</li>
                     <li>Intelligent attendee intent detection suggests ideal meeting durations and appropriate formats.</li>
@@ -377,16 +377,16 @@ function Schedule365() {
         },
         {
             id: 1,
-            title: 'Microsoft Ecosystem',
-            Heading: 'Effortless Integration with Microsoft Ecosystem: Schedule 365 System',
+            title: 'Outlook Integration',
+            Heading: 'Effortless Integration with Outlook: Schedule 365 System',
             content: (
                 <ul>
-                    <li>Maximize your existing Microsoft ecosystem with native Schedule 365 calendar intelligence.</li>
-                    <li>Intuitive, cloud-based scheduling built for Microsoft 365 to elevate workplace productivity.</li>
-                    <li>Deploys as a native Microsoft Teams and Outlook add-in for centralized meeting management.</li>
+                    <li>Maximize your existing Outlook setup with native Schedule 365 calendar intelligence.</li>
+                    <li>Intuitive, cloud-based scheduling built for Outlook to elevate workplace productivity.</li>
+                    <li>Deploys as a native Outlook add-in for centralized meeting management.</li>
                     <li>Bi-directional real-time synchronization with Outlook calendars prevents double bookings.</li>
-                    <li>Automate post-meeting workflows with direct Microsoft Power Automate and Graph connectors.</li>
-                    <li>Sync physical meeting room resources and equipment directly via Microsoft Exchange assets.</li>
+                    <li>Automate post-meeting workflows with direct email and calendar connectors.</li>
+                    <li>Sync physical meeting room resources and equipment directly via Exchange assets.</li>
                 </ul>
             ),
             image: 'https://ik.imagekit.io/apps365/Lp-pages/CLM%202.webp'
@@ -397,10 +397,10 @@ function Schedule365() {
             Heading: 'Streamlined Meeting Operations: Outlook Schedule 365 App',
             content: (
                 <ul>
-                    <li>Automate the full meeting lifecycle with dynamic links, Teams video URLs, and room booking.</li>
+                    <li>Automate the full meeting lifecycle with dynamic links, meeting URLs, and room booking.</li>
                     <li>Smart round-robin distribution to route leads and client calls to the right team members.</li>
                     <li>Automated calendar holds, customizable buffer times, and instant reschedule handling.</li>
-                    <li>Real-time notifications, attendee reminders, and status updates directly in Microsoft Teams.</li>
+                    <li>Real-time notifications, attendee reminders, and status updates directly in Outlook inbox.</li>
                     <li>Manage availability windows, maximum daily meeting caps, and focus-time locks effortlessly.</li>
                     <li>Custom routing logic routes VIP prospects to senior account reps based on form responses.</li>
                     <li>Centralized administrative overrides allow managers to reassign bookings during team leaves.</li>
@@ -414,7 +414,7 @@ function Schedule365() {
             Heading: 'User-centered Approach to Schedule 365 Tool Design',
             content: (
                 <ul>
-                    <li>Built with Microsoft Fluent UI for a consistent, seamless experience with zero learning curve.</li>
+                    <li>Built with modern UI patterns for a consistent, seamless experience with zero learning curve.</li>
                     <li>Frictionless booking pages branded with custom themes, logos, and custom domain links.</li>
                     <li>Smart timezone detection automatically displays local times for all external attendees.</li>
                     <li>Customizable booking forms collect attendee details and qualifications prior to confirmation.</li>
@@ -427,13 +427,13 @@ function Schedule365() {
         {
             id: 4,
             title: 'Meeting Lifecycle',
-            Heading: 'End-to-End Meeting Lifecycle Management in Microsoft 365',
+            Heading: 'End-to-End Meeting Lifecycle Management in Outlook',
             content: (
                 <ul>
                     <li>Orchestrate every phase from booking request and attendee qualification to post-call follow-ups.</li>
-                    <li>Centralize scheduling links, collective hosts, custom questions, and analytics in Microsoft 365.</li>
+                    <li>Centralize scheduling links, collective hosts, custom questions, and analytics in Outlook.</li>
                     <li>Automate pre-meeting agendas, attendee reminders, and post-meeting follow-up workflows.</li>
-                    <li>Capture pre-meeting intake notes directly into associated CRM and SharePoint meeting cards.</li>
+                    <li>Capture pre-meeting intake notes directly into associated Outlook calendar items.</li>
                     <li>Generate comprehensive no-show tracking, attendance logs, and cancellation reason reports.</li>
                 </ul>
             ),
@@ -451,7 +451,9 @@ function Schedule365() {
                     <li>OAuth 2.0 and Single Sign-On (SSO) via Microsoft Entra ID</li>
                     <li>Automated No-Show Tracking and AI-Driven Notifications</li>
                     <li>Strict Enterprise Privacy and Global Compliance Standards</li>
-                    <li>Automated Secure Microsoft Teams Meeting Links</li>
+                    <li>Automated Secure Meeting Invites</li>
+                    <li>End-to-End Encryption for Calendar Metadata in Transit and at Rest</li>
+                    <li>Automated Data Retention and GDPR/HIPAA Compliant Logging</li>
                 </ul>
             ),
             image: 'https://ik.imagekit.io/zn4au2jftpm5/Apps365/Teams/CLM%20365%20teams_yFI8NzGjap.png?updatedAt=1725450649581'
@@ -469,15 +471,15 @@ function Schedule365() {
         },
         {
             image: "https://ik.imagekit.io/apps365/Lp-pages/Microsoft%20Teams%20&%20Outlook%20integration.svg",
-            text: "Native Teams & Outlook sync"
+            text: "Native Outlook calendar sync"
         },
         {
             image: "https://ik.imagekit.io/apps365/Lp-pages/Microsoft%20365%20compliance.svg",
-            text: "Microsoft 365 compliance"
+            text: "Enterprise email compliance"
         },
         {
             image: "https://ik.imagekit.io/apps365/Lp-pages/Microsoft%20Entra%20ID%20security.svg",
-            text: "Microsoft Entra ID security"
+            text: "Enterprise SSO security"
         },
         {
             image: "https://ik.imagekit.io/apps365/Lp-pages/Centralized%20contract%20repository.svg",
@@ -535,7 +537,7 @@ function Schedule365() {
     ];
 
     const solutions = [
-        "Native Outlook and Teams bi-directional calendar synchronization",
+        "Native Outlook bi-directional calendar synchronization",
         "AI-powered meeting agent to negotiate directly via email",
         "Automated round-robin, multi-host, and collective scheduling",
         "Automated booking confirmations, invites, and pre-meeting reminders",
@@ -554,16 +556,16 @@ function Schedule365() {
 
     // Define features array for Schedule 365
     const features = [
-        "Built inside Microsoft 365",
-        "AI contract & meeting agents",
+        "Built inside Outlook",
+        "AI meeting agents",
         "Automated scheduling workflows"
     ];
     return (
         <>
             <HelmetProvider>
                 <Helmet>
-                    <title>AI Contract Lifecycle Management Software | CLM 365</title>
-                    <meta name="description" content="Streamline contract creation, review, approvals, and renewals with CLM 365 AI. Simplify contract lifecycle management and improve visibility across your organization." />
+                    <title>AI Meeting Scheduling Software for Outlook | Schedule 365</title>
+                    <meta name="description" content="Automate meeting booking directly inside Outlook. Schedule 365 powers autonomous AI scheduling agents, team round-robin routing, and zero third-party data silos." />
                 </Helmet>
                 <ScrollToTop />
                 <Header isComparison={true} />
@@ -575,18 +577,18 @@ function Schedule365() {
                         <div className="HR_FlexCenterSpcBetween HR_ParentSection1">
                             <div className="hero-wrapper">
                                 <h1 className="hero-badge">
-                                    Outlook &amp; Microsoft 365 Intelligent Scheduling Software
+                                    Outlook Intelligent Meeting Scheduling Software
                                 </h1>
 
                                 <h2 className="hero-heading">
-                                    Microsoft 365 Scheduling -
+                                    Outlook Meeting Scheduling -
                                     <br />
                                     Software <span className="accent">with AI Agents</span>
                                 </h2>
 
                                 <p className="hero-desc">
                                     <strong>Stop losing time to back-and-forth emails, double-bookings, and disconnected calendar tools. </strong>
-                                    <br /> Schedule 365 transforms Microsoft 365 and Outlook into an autonomous, AI-driven scheduling engine. Coordinate internal cross-team syncs, client meetings, and multi-timezone availability without ever leaving your Microsoft ecosystem.
+                                    Schedule 365 transforms Outlook into an autonomous, AI-driven meeting scheduling engine. Coordinate internal cross-team syncs, client meetings, and multi-timezone availability directly inside your Outlook inbox.
                                 </p>
 
                                 <div className="hero-cta">
@@ -642,11 +644,11 @@ function Schedule365() {
 
                                 <div className="sharepoint-right">
                                     <h3>
-                                        Schedule 365 Adds the Intelligence, AI Agents, and Automation Your Calendars Need
+                                        Schedule 365 Adds the Intelligence, AI, and Automation Your Outlook Needs
                                     </h3>
 
                                     <p>
-                                        Instead of Outlook being a passive viewer, Schedule 365 adds real-time AI negotiation, team round-robin routing, automated conflict handling, and enterprise privacy inside Microsoft 365.
+                                        Instead of Outlook being a passive viewer, Schedule 365 adds real-time AI negotiation, team round-robin routing, automated conflict handling, and enterprise privacy directly inside Outlook.
                                     </p>
 
                                     <ul>
@@ -675,8 +677,8 @@ function Schedule365() {
                                 </h2>
 
                                 <p>
-                                    <strong>Your Intelligent Scheduling Assistant Inside Microsoft 365</strong><br />
-                                    Built directly into Microsoft 365, Schedule AI Agent helps sales, hiring, customer success, and executive teams coordinate calendars, resolve double bookings, check real-time availability, and schedule meetings using natural language without leaving Outlook or Teams. Whether coordinating cross-timezone client syncs or scheduling multi-attendee reviews, simply ask in plain English and let autonomous Agentic AI handle the entire workflow.
+                                    <strong>Your Intelligent Meeting Scheduling Assistant Inside Outlook</strong><br />
+                                    Built directly into Outlook, Schedule AI Agent helps sales, hiring, and business teams coordinate calendars, resolve conflicts, and book meetings using natural language—all without leaving your Outlook inbox. Simply ask a question or drop a prompt, and get instant, context-aware scheduling actions powered by Agentic AI.
                                 </p>
                             </div>
                             <div className="sharepoint-content">
@@ -738,11 +740,11 @@ function Schedule365() {
                     <div className="why-choose-container">
                         <div className="sharepoint-header">
                             <h2 className='HR_heading'>
-                                Why Choose Microsoft 365 for Smart Scheduling?
+                                Why Choose Outlook for Smart Meeting Scheduling?
                             </h2>
 
                             <p>
-                                Stop Managing Appointments Across Disconnected Third-Party Systems. Schedule 365 keeps every meeting, invite, and calendar entry secure inside your Microsoft 365 tenant, combining native Outlook integration, Teams automation, and enterprise governance into one unified platform.
+                                Stop Managing Appointments Across Disconnected Third-Party Systems. Schedule 365 keeps every meeting, invite, and calendar entry secure inside Outlook, combining native calendar synchronization, workflow automation, and enterprise governance into one unified platform.
                             </p>
                         </div>
                         <div className="why-choose-boxs">
@@ -764,7 +766,7 @@ function Schedule365() {
                                 </h2>
 
                                 <p>
-                                    Built inside Microsoft 365 to centralize availability, automate meeting workflows, and manage the complete scheduling lifecycle without leaving Outlook or Teams.
+                                    Built inside Outlook to centralize availability, automate meeting workflows, and manage the complete scheduling lifecycle without leaving your inbox.
                                 </p>
                             </div>
 
@@ -787,7 +789,10 @@ function Schedule365() {
                         </div>
                     </section>
 
-                    <OverviewSchedule365 MainHeading="Microsoft 365 Meeting Scheduling — MS Teams, Outlook, Copilot & Agentic AI Built into Schedule 365" />
+                    <OverviewSchedule365
+                        MainHeading="Intelligent Outlook Meeting Scheduling — AI-Powered Calendar Automation Built into Schedule 365"
+                        MainDescription="Track, coordinate, and orchestrate your meetings effortlessly with our AI-powered Outlook scheduling system. With automated email workflows and intelligent conflict resolution, calendar management is streamlined, letting your teams focus on high-impact conversations."
+                    />
                 </div>
 
                 <div className='work-section'>
@@ -797,7 +802,7 @@ function Schedule365() {
                         </h2>
 
                         <p>
-                            Schedule 365 unifies every stage of meeting orchestration into one seamless workflow—from real-time calendar availability and team routing to AI-driven negotiation, reminder automation, and post-meeting follow-ups, all natively within your Microsoft 365 environment.
+                            Schedule 365 unifies every stage of meeting orchestration into one seamless workflow—from real-time Outlook calendar availability and team routing to AI-driven negotiation, reminder automation, and post-meeting follow-ups.
                         </p>
                     </div>
                     <div className='work-info'>
@@ -873,11 +878,11 @@ function Schedule365() {
                 <section className="manage-footer-content">
                     <div className="manage-footer-container">
                         <h2 className="manage-footer-title">
-                            Ready to Automate Scheduling Inside Microsoft 365?
+                            Ready to Automate Scheduling Inside Outlook?
                         </h2>
 
                         <p className="manage-footer-description">
-                            Move from back-and-forth emails and fragmented calendar links to an autonomous, AI-powered meeting orchestration platform — built natively inside Microsoft 365.
+                            Move from back-and-forth emails and fragmented booking links to an autonomous, AI-powered meeting orchestration platform — built natively inside Outlook.
                         </p>
                         <div style={{ display: "flex", justifyContent: "center", padding: "2vw 0vw" }}>
                             <DemoButtons

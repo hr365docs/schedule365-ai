@@ -29,29 +29,29 @@ const panelData = {
         {
             category: "Learning Curve",
             bad: "New standalone UI and external logins — requires dedicated employee onboarding and change management",
-            good: "Natively embedded inside Outlook and Microsoft Teams — uses tools your employees already work in daily",
+            good: "Natively embedded inside Outlook — uses the email and calendar tools your employees already work in daily",
         },
         {
             category: "Adoption Speed",
             bad: "Weeks or months before cross-department teams actively adopt and link external calendar apps",
-            good: "Instant adoption — team members are already signed into their Microsoft 365 accounts",
+            good: "Instant adoption — team members are already signed into their Outlook accounts",
         },
         {
             category: "Team Coordination",
             bad: "Meeting coordination occurs across isolated tools — creating schedule silos and missing calendar holds",
-            good: "Schedule and manage meetings directly inside Teams channels, Outlook chats, and Copilot chats",
+            good: "Schedule and manage meetings directly inside Outlook emails, calendar views, and native drafts",
         },
         {
             category: "Mobile & Remote Access",
             bad: "Requires downloading separate apps and re-authenticating on mobile devices",
-            good: "Accessible seamlessly across Outlook Mobile and Microsoft Teams apps on iOS and Android",
+            good: "Accessible seamlessly across Outlook Mobile on iOS and Android without separate logins",
         },
     ],
     security: [
         {
             category: "Data Residency",
             bad: "Attendee emails, meeting notes, and calendar metadata leave your tenant to third-party cloud servers",
-            good: "All scheduling and calendar data stays completely inside your Microsoft 365 tenant boundary",
+            good: "All scheduling and calendar data stays completely inside your Outlook tenant boundary",
         },
         {
             category: "Access & Identity Control",
@@ -66,7 +66,7 @@ const panelData = {
         {
             category: "Compliance Standards",
             bad: "Vendor compliance certifications vary and frequently conflict with internal data governance",
-            good: "Inherits enterprise Microsoft 365 compliance — SOC 2 Type II, ISO 27001, HIPAA, and GDPR ready",
+            good: "Inherits enterprise Microsoft compliance — SOC 2 Type II, ISO 27001, HIPAA, and GDPR ready",
         },
     ],
     integration: [
@@ -81,9 +81,9 @@ const panelData = {
             good: "Native Microsoft Power Automate integration — connect to 900+ apps without custom coding",
         },
         {
-            category: "Video Conferencing & Rooms",
-            bad: "Requires manual generation or third-party plugins to insert Microsoft Teams meeting room links",
-            good: "Generates secure Microsoft Teams video links and reserves Exchange meeting rooms automatically",
+            category: "Meeting Links & Rooms",
+            bad: "Requires manual generation or third-party plugins to insert video links and reserve rooms",
+            good: "Generates secure meeting links and reserves Exchange conference rooms automatically",
         },
         {
             category: "CRM & ERP Connectivity",
@@ -94,18 +94,18 @@ const panelData = {
     cost: [
         {
             category: "Licensing Model",
-            bad: "Expensive per-seat monthly subscriptions stacked on top of existing Microsoft 365 licensing costs",
-            good: "Built directly on your existing Microsoft 365 investment — eliminate redundant SaaS spend",
+            bad: "Expensive per-seat monthly subscriptions stacked on top of existing licensing costs",
+            good: "Built directly into your existing Outlook environment — eliminate redundant SaaS spend",
         },
         {
             category: "Implementation Cost",
             bad: "High setup overhead — third-party directory syncs, custom domain routing, and IT consultant fees",
-            good: "One-click tenant deployment — zero data migration or third-party infrastructure setup needed",
+            good: "One-click Outlook add-in deployment — zero data migration or third-party infrastructure setup needed",
         },
         {
             category: "IT & Admin Overhead",
             bad: "IT admins must manage another external vendor SLA, security risk assessment, and billing cycle",
-            good: "Administered directly through Microsoft 365 admin center — minimal ongoing IT overhead",
+            good: "Administered directly through your Microsoft admin center — minimal ongoing IT overhead",
         },
         {
             category: "Enterprise Tier Scaling",
@@ -117,7 +117,7 @@ const panelData = {
         {
             category: "AI Scheduling Agents",
             bad: "Basic automated links with no AI context; premium AI agents require expensive higher-tier upgrades",
-            good: "Built-in autonomous AI agents parse scheduling intent from emails and book mutual slots automatically",
+            good: "Built-in autonomous AI agents parse scheduling intent from Outlook emails and book mutual slots automatically",
         },
         {
             category: "Routing & Distribution",
@@ -127,12 +127,12 @@ const panelData = {
         {
             category: "Reminders & Notifications",
             bad: "Booking notifications delivered from generic third-party domains — frequently caught by spam filters",
-            good: "Branded calendar invitations and reminders sent directly from your verified corporate domain",
+            good: "Branded calendar invitations and reminders sent directly from your verified Outlook domain",
         },
         {
-            category: "Cross-Tenant Search",
+            category: "Inbox Search",
             bad: "Siloed booking visibility that cannot coordinate internal resource availability or focus time",
-            good: "Microsoft 365 Copilot search instantly surfaces meeting histories, participant availability, and agendas",
+            good: "Outlook search instantly surfaces meeting histories, participant availability, and agendas",
         },
     ],
 };
@@ -399,11 +399,11 @@ export default function ComparisonSection() {
                 {/* Header */}
                 <div style={{ textAlign: "center", marginBottom: "16px" }}>
                     <h2 className="HR_heading">
-                        Microsoft Native Schedule 365 vs Standalone Scheduling Apps
+                        Native Outlook Schedule 365 vs Standalone Scheduling Apps
                     </h2>
 
                     <p className="organizationsText">
-                        See why enterprise teams choose a Microsoft 365-native intelligent scheduling system over isolated external calendar tools.
+                        See why enterprise teams choose an Outlook-native intelligent scheduling system over isolated external calendar tools.
                     </p>
                 </div>
 
