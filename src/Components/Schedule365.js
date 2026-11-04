@@ -818,7 +818,7 @@ function Schedule365() {
                     <h2 className='HR_heading HR_MT'>Our Clients</h2>
                     <div className='HR_MT'>
                         <CLMClient />
-                    </div>
+                    </div> 
 
                     <section className="m365-section">
                         <div className="m365-container">
