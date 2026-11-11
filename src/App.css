@@ -19,10 +19,12 @@
 }
 
 /* Prevent horizontal window scrolling across the app */
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 .orange-loader {
   width: 1.2vw;
   height: 1.2vw;
@@ -141,7 +143,7 @@ html, body {
   margin: 0 auto;
 }
 
-.Meet_AI_Container{
+.Meet_AI_Container {
   display: flex;
   flex-direction: column;
   background-color: #e8e9e9;
@@ -149,23 +151,23 @@ html, body {
   gap: 1.8vw;
 }
 
-.Meet_AI_Container .sharepoint-header p{
+.Meet_AI_Container .sharepoint-header p {
   font-size: 1.3vw;
   line-height: 1.4;
 }
 
-.Meet_AI_Container .sharepoint-content{
+.Meet_AI_Container .sharepoint-content {
   display: flex;
   justify-content: space-between;
 }
 
-.content-left{
+.content-left {
   display: flex;
   flex-direction: column;
   width: auto;
 }
 
-.content-left h3{
+.content-left h3 {
   font-size: 2vw;
   font-weight: 700;
   line-height: 1.3;
@@ -174,12 +176,12 @@ html, body {
   margin: 0.3vw;
 }
 
-.content-left span{
+.content-left span {
   display: flex;
   align-items: center;
 }
 
-.content-left span svg{
+.content-left span svg {
   stroke: #333;
   stroke-width: 2.5;
   fill: none;
@@ -188,7 +190,7 @@ html, body {
   width: 1.4vw;
 }
 
-.content-left p{
+.content-left p {
   color: var(--textBlackColor);
   text-align: left;
   /* margin-top: 1vw;
@@ -201,11 +203,12 @@ html, body {
   gap: 0.3vw;
 }
 
-.content-right{
+.content-right {
   position: relative;
   width: 50vw;
 }
-.content-right .tab-image{
+
+.content-right .tab-image {
   width: 100%;
 }
 
@@ -414,20 +417,20 @@ html, body {
   flex-shrink: 0;
 }
 
-.why-choose-container{
+.why-choose-container {
   display: flex;
   flex-direction: column;
   padding: 3vw;
   background-color: #e8e9e9;
 }
 
-.why-choose-boxs{
+.why-choose-boxs {
   display: flex;
   justify-content: center;
   gap: 1.8vw;
 }
 
-.boxs{
+.boxs {
   display: flex;
   flex-direction: column;
   gap: 1.2vw;
@@ -439,13 +442,29 @@ html, body {
   height: 12vw;
 }
 
-.boxs img{
+.boxs img {
   width: 4vw;
   border-radius: 0.81vw 0.81vw 0.81vw 0.81vw;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.16);
 }
 
-.boxs p{
+.boxs-icon {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 0.81vw;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.boxs-icon svg {
+  width: 55%;
+  height: 55%;
+}
+
+.boxs p {
   font-size: 1.2vw;
   font-weight: 600;
   line-height: 1.2;
@@ -453,19 +472,19 @@ html, body {
   margin: auto;
 }
 
-.work-section{
+.work-section {
   background-color: var(--panelBgColor);
   padding: 3.5vw;
 }
 
-.work-info{
+.work-info {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.7vw;
   padding-top: 2vw;
 }
 
-.work-box{
+.work-box {
   display: flex;
   flex-direction: column;
   gap: 1vw;
@@ -478,18 +497,18 @@ html, body {
   border: 0.05vw solid #e6edf5;
 }
 
-.work-box h3{
+.work-box h3 {
   font-size: 1.8vw;
   font-weight: 700;
   margin: 0;
 }
 
-.work-box p{
+.work-box p {
   font-size: 1.3vw;
   margin: 0;
 }
 
-.work-box img{
+.work-box img {
   width: 4vw;
 }
 
@@ -714,7 +733,7 @@ html, body {
   border-radius: 12px;
   padding: 3vw 0vw 2vw;
   font-family: var(--font-Assistant);
-  max-width: 60vw;
+  max-width: 47vw;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -815,7 +834,7 @@ html, body {
 
 .hero-features {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.7vw;
 }
 
@@ -827,8 +846,9 @@ html, body {
   align-items: center;
   gap: .4vw;
   padding: .45vw .9vw;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   font-weight: 500;
+  white-space: nowrap;
   display: flex;
 }
 
@@ -3157,7 +3177,7 @@ padding: 0; */
 }
 
 .HR_panel {
-   background-image: url("https://ik.imagekit.io/apps365/Lp-pages/CLM365-hero-image.webp");
+  background-image: url("https://ik.imagekit.io/apps365/Lp-pages/CLM365-hero-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -3168,12 +3188,12 @@ padding: 0; */
   /* margin-top: 14vw; */
 }
 
-.HR_overlay{
+.HR_overlay {
   background: linear-gradient(to right top, #ffffffc9 -23%, black 36%, transparent 80%);
   padding: 1vw 3vw;
 }
 
-.HR_DefaultButton .head_btn{
+.HR_DefaultButton .head_btn {
   background: transparent;
   border-color: var(--whiteColor);
   color: var(--whiteColor);
@@ -5227,7 +5247,7 @@ dialog::backdrop {
     object-fit: contain;
   }
 
-  .m365-container{
+  .m365-container {
     width: 100%;
   }
 
@@ -5424,13 +5444,13 @@ dialog::backdrop {
   }
 
   .hero-badge {
-    font-size:2.95vw !important;
+    font-size: 2.95vw !important;
     text-align: left;
     margin-bottom: 4vw;
     padding: 2vw 2.3vw !important;
   }
 
-  .work-box{
+  .work-box {
     padding: 2vw;
   }
 
@@ -5992,16 +6012,17 @@ dialog::backdrop {
     background-size: cover;
   }
 
-  .HR_overlay{
+  .HR_overlay {
     background: linear-gradient(to bottom, #000000d4);
     padding: 1vw 3vw;
   }
 
-  .hero-features{
+  .hero-features {
     gap: 2vw;
+    flex-wrap: wrap;
   }
 
-  .RightdemoForm{
+  .RightdemoForm {
     display: flex;
     justify-content: center;
     width: 80vw;
@@ -6994,72 +7015,79 @@ dialog::backdrop {
     width: 100%;
   }
 
-  .Meet_AI_Container .sharepoint-header p{
+  .Meet_AI_Container .sharepoint-header p {
     font-size: 3.45vw;
     line-height: 1.4;
     text-align: justify;
   }
 
-  .content-left span svg{
+  .content-left span svg {
     height: 4vw;
     width: 4vw;
   }
 
-  .content-left h3{
+  .content-left h3 {
     font-size: 4vw;
   }
 
-  .content-left p{
+  .content-left p {
     font-size: 3.45vw;
   }
 
-  .content-right{
+  .content-right {
     width: 92vw;
   }
 
-  .content-right img{
+  .content-right img {
     width: 93vw;
   }
 
-  .why-choose-boxs{
+  .why-choose-boxs {
     flex-wrap: wrap;
   }
 
-  .boxs{
+  .boxs {
     width: 30vw;
     height: 24vw;
   }
 
-  .boxs img{
+  .boxs img {
     width: 8vw;
   }
-  
-  .boxs p{
+
+  .boxs-icon {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 2vw;
+  }
+
+  .boxs p {
     font-size: 3vw;
     margin: auto;
   }
 
-  .work-info{
+  .work-info {
     grid-template-columns: 1fr;
   }
 
-  .work-box{
+  .work-box {
     border-radius: 4vw;
     padding: 8vw;
   }
 
-  .work-box img{
+  .work-box img {
     width: 10vw;
   }
 
-  .work-box h3{
+  .work-box h3 {
     font-size: 4.2vw;
   }
-  .work-box p{
+
+  .work-box p {
     font-size: 3.5vw;
   }
 
-  .modal-image{
+  .modal-image {
     max-width: 95vw;
   }
 
@@ -7105,9 +7133,11 @@ dialog::backdrop {
   gap: 0.1vw;
   align-items: baseline;
 }
-.rupee-price{
-      font-size: 2.6vw;
+
+.rupee-price {
+  font-size: 2.6vw;
 }
+
 @media all and (max-width: 1024px) {
   .AzureText a {
     font-size: 1.8vw;
@@ -7147,7 +7177,7 @@ dialog::backdrop {
     text-align: left;
     margin-bottom: 4vw;
     padding: 1vw 1.3vw;
-}
+  }
 
   .hero-wrapper {
     max-width: 95vw;

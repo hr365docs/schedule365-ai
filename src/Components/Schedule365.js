@@ -145,8 +145,12 @@ function Schedule365() {
             icon: (
                 <div className="feature-icon fi-teal">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
+                        <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
+                        <path d="M16 2v4"></path>
+                        <path d="M8 2v4"></path>
+                        <path d="M3 10h5"></path>
+                        <circle cx="16" cy="16" r="6"></circle>
+                        <path d="M16 14v2.2l1.6 1"></path>
                     </svg>
                 </div>
             )
@@ -157,9 +161,9 @@ function Schedule365() {
             icon: (
                 <div className="feature-icon fi-orange">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-                        <line x1="12" y1="9" x2="12" y2="13"></line>
-                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        <path d="M12 8v4"></path>
+                        <path d="M12 16h.01"></path>
                     </svg>
                 </div>
             )
@@ -170,10 +174,12 @@ function Schedule365() {
             icon: (
                 <div className="feature-icon fi-purple">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <path d="M12 8V4H8"></path>
+                        <rect x="4" y="8" width="16" height="12" rx="2"></rect>
+                        <path d="M2 14h2"></path>
+                        <path d="M20 14h2"></path>
+                        <path d="M15 13v2"></path>
+                        <path d="M9 13v2"></path>
                     </svg>
                 </div>
             )
@@ -184,7 +190,10 @@ function Schedule365() {
             icon: (
                 <div className="feature-icon fi-green">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        <path d="m17 2 4 4-4 4"></path>
+                        <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
+                        <path d="m7 22-4-4 4-4"></path>
+                        <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
                     </svg>
                 </div>
             )
@@ -199,6 +208,7 @@ function Schedule365() {
                         <line x1="16" y1="2" x2="16" y2="6"></line>
                         <line x1="8" y1="2" x2="8" y2="6"></line>
                         <line x1="3" y1="10" x2="21" y2="10"></line>
+                        <path d="m9 16 2 2 4-4"></path>
                     </svg>
                 </div>
             )
@@ -209,10 +219,10 @@ function Schedule365() {
             icon: (
                 <div className="feature-icon fi-navy">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <rect x="3" y="3" width="7" height="7"></rect>
-                        <rect x="14" y="3" width="7" height="7"></rect>
-                        <rect x="14" y="14" width="7" height="7"></rect>
-                        <rect x="3" y="14" width="7" height="7"></rect>
+                        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                        <path d="M3 3v5h5"></path>
+                        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                        <path d="M16 16h5v5"></path>
                     </svg>
                 </div>
             )
@@ -295,58 +305,58 @@ function Schedule365() {
     const accordionItems = [
         {
             title: '1. Can Microsoft 365 and Outlook be used for automated scheduling?',
-            content: `Yes. Microsoft 365 and Outlook provide calendar infrastructure, but Schedule 365 enhances them with autonomous AI agents, personalized booking links, team round-robin routing, conflict shields, and automatic Teams meeting link generation into a complete enterprise scheduling platform.`
+            content: `Yes. Microsoft 365 and Outlook provide calendar infrastructure, but Schedule365.ai enhances them with autonomous AI agents, personalized booking links, team round-robin routing, conflict shields, and automatic Teams meeting link generation into a complete enterprise scheduling platform.`
         },
         {
-            title: '2. How does Schedule 365 help manage meetings on the go?',
-            content: `Schedule 365 works directly inside Outlook Mobile and Microsoft Teams apps on iOS and Android. Team members and organizers can review incoming bookings, adjust availability, or reschedule meetings anytime without opening separate external tools.`
+            title: '2. How does Schedule365.ai help manage meetings on the go?',
+            content: `Schedule365.ai works directly inside Outlook Mobile and Microsoft Teams apps on iOS and Android. Team members and organizers can review incoming bookings, adjust availability, or reschedule meetings anytime without opening separate external tools.`
         },
         {
-            title: '3. Is Schedule 365 built natively on Microsoft 365?',
-            content: `Yes. Schedule 365 is designed specifically for organizations using Microsoft 365, Outlook, and Teams. It operates natively inside your existing Microsoft tenant without requiring third-party calendar servers.`
+            title: '3. Is Schedule365.ai built natively on Microsoft 365?',
+            content: `Yes. Schedule365.ai is designed specifically for organizations using Microsoft 365, Outlook, and Teams. It operates natively inside your existing Microsoft tenant without requiring third-party calendar servers.`
         },
         {
-            title: '4. How does Schedule 365 integrate with other Microsoft products?',
-            content: `Schedule 365 connects bi-directionally with Outlook calendars, Microsoft Teams meetings and rooms, Microsoft Copilot, Power Automate, and Dynamics 365 via Microsoft Graph API for unified enterprise scheduling workflows.`
+            title: '4. How does Schedule365.ai integrate with other Microsoft products?',
+            content: `Schedule365.ai connects bi-directionally with Outlook calendars, Microsoft Teams meetings and rooms, Microsoft Copilot, Power Automate, and Dynamics 365 via Microsoft Graph API for unified enterprise scheduling workflows.`
         },
         {
-            title: '5. Does Schedule 365 include an autonomous AI Agent?',
-            content: `Yes. Schedule 365 features an intelligent AI agent that understands natural language email requests, identifies mutually open time slots across different time zones, drafts replies, and confirms bookings automatically.`
+            title: '5. Does Schedule365.ai include an autonomous AI Agent?',
+            content: `Yes. Schedule365.ai features an intelligent AI agent that understands natural language email requests, identifies mutually open time slots across different time zones, drafts replies, and confirms bookings automatically.`
         },
         {
-            title: '6. Can Schedule 365 send automated meeting reminders and reduce no-shows?',
+            title: '6. Can Schedule365.ai send automated meeting reminders and reduce no-shows?',
             content: `Yes. Automated confirmation emails, calendar invites, and customizable pre-meeting reminder notifications are sent to attendees directly from your own corporate domain via Outlook and Teams.`
         },
         {
-            title: '7. Who should use Schedule 365 intelligent scheduling software?',
-            content: `Schedule 365 is built for sales, recruitment, customer success, executive management, and IT teams that need automated meeting orchestration without compromising enterprise Microsoft governance.`
+            title: '7. Who should use Schedule365.ai intelligent scheduling software?',
+            content: `Schedule365.ai is built for sales, recruitment, customer success, executive management, and IT teams that need automated meeting orchestration without compromising enterprise Microsoft governance.`
         },
         {
-            title: '8. How does Schedule 365 prevent double bookings and calendar conflicts?',
-            content: `Schedule 365 checks real-time availability across internal calendars, resource mailboxes, and focus-time holds. It applies customizable buffer times between appointments to eliminate overlapping bookings.`
+            title: '8. How does Schedule365.ai prevent double bookings and calendar conflicts?',
+            content: `Schedule365.ai checks real-time availability across internal calendars, resource mailboxes, and focus-time holds. It applies customizable buffer times between appointments to eliminate overlapping bookings.`
         },
         {
             title: '9. Can I build custom scheduling workflows without coding?',
-            content: `Yes. Schedule 365 integrates with Microsoft Power Automate, allowing you to trigger post-meeting follow-ups, sync attendee details with your CRM, and update team channels without writing code.`
+            content: `Yes. Schedule365.ai integrates with Microsoft Power Automate, allowing you to trigger post-meeting follow-ups, sync attendee details with your CRM, and update team channels without writing code.`
         },
         {
-            title: '10. How is data security and compliance handled in Schedule 365?',
-            content: `Schedule 365 uses tenant-bound security where all meeting data and calendar metadata remain inside your Microsoft 365 environment. It inherits your Entra ID (Azure AD) SSO, role-based access, and Purview audit logging.`
+            title: '10. How is data security and compliance handled in Schedule365.ai?',
+            content: `Schedule365.ai uses tenant-bound security where all meeting data and calendar metadata remain inside your Microsoft 365 environment. It inherits your Entra ID (Azure AD) SSO, role-based access, and Purview audit logging.`
         },
         {
-            title: '11. Does Schedule 365 store our calendar and attendee data externally?',
-            content: `No. Schedule 365 operates within your existing Microsoft 365 boundary. Meeting records, attendee emails, and calendar entries remain in your Exchange and Outlook systems, eliminating third-party data silos.`
+            title: '11. Does Schedule365.ai store our calendar and attendee data externally?',
+            content: `No. Schedule365.ai operates within your existing Microsoft 365 boundary. Meeting records, attendee emails, and calendar entries remain in your Exchange and Outlook systems, eliminating third-party data silos.`
         },
         {
-            title: '12. Does Schedule 365 work with Microsoft Copilot?',
-            content: `Yes. Schedule 365 is Copilot-ready. You can prompt Microsoft Copilot in natural language to check team availability, schedule cross-departmental syncs, and summarize upcoming meetings directly inside your workflow.`
+            title: '12. Does Schedule365.ai work with Microsoft Copilot?',
+            content: `Yes. Schedule365.ai is Copilot-ready. You can prompt Microsoft Copilot in natural language to check team availability, schedule cross-departmental syncs, and summarize upcoming meetings directly inside your workflow.`
         },
         {
             title: '13. Is our calendar data sent to public AI services like ChatGPT?',
-            content: `No. Schedule 365 does not transmit calendar or attendee data to public AI models. All AI tasks utilize secure enterprise models, such as Azure OpenAI, governed strictly by your corporate data protection policies.`
+            content: `No. Schedule365.ai does not transmit calendar or attendee data to public AI models. All AI tasks utilize secure enterprise models, such as Azure OpenAI, governed strictly by your corporate data protection policies.`
         },
         {
-            title: '14. Can Schedule 365 route meetings via Round-Robin and Collective Panels?',
+            title: '14. Can Schedule365.ai route meetings via Round-Robin and Collective Panels?',
             content: `Yes. You can route inbound prospect calls evenly among sales representatives using smart round-robin rules, or schedule collective panel interviews where every required host must be mutually available.`
         },
         {
@@ -460,29 +470,78 @@ function Schedule365() {
         },
     ];
 
+    const boxSvg = (children) => (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            {children}
+        </svg>
+    );
+
     const Boxs = [
         {
-            image: "https://ik.imagekit.io/apps365/Lp-pages/No%20duplicate%20document%20repositories.svg",
+            bg: "#E0F7FA",
+            color: "#0097A7",
+            icon: boxSvg(<>
+                <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                <path d="M16 2v4"></path>
+                <path d="M8 2v4"></path>
+                <path d="M3 10h18"></path>
+                <path d="m14 14-4 4"></path>
+                <path d="m10 14 4 4"></path>
+            </>),
             text: "No external calendar silos"
         },
         {
-            image: "https://ik.imagekit.io/apps365/Lp-pages/Role%20based%20permissions.svg",
+            bg: "#FFF3E0",
+            color: "#F57C00",
+            icon: boxSvg(<>
+                <circle cx="10" cy="7" r="4"></circle>
+                <path d="M2 21v-2a4 4 0 0 1 4-4h6"></path>
+                <rect x="14" y="15" width="8" height="6" rx="1"></rect>
+                <path d="M16 15v-2a2 2 0 0 1 4 0v2"></path>
+            </>),
             text: "Role-based access permissions"
         },
         {
-            image: "https://ik.imagekit.io/apps365/Lp-pages/Microsoft%20Teams%20&%20Outlook%20integration.svg",
+            bg: "#E8F5E9",
+            color: "#388E3C",
+            icon: boxSvg(<>
+                <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <path d="M3 3v5h5"></path>
+                <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                <path d="M16 16h5v5"></path>
+            </>),
             text: "Native Outlook calendar sync"
         },
         {
-            image: "https://ik.imagekit.io/apps365/Lp-pages/Microsoft%20365%20compliance.svg",
+            bg: "#FFF8E1",
+            color: "#F9A825",
+            icon: boxSvg(<>
+                <path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"></path>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                <path d="m16 19 2 2 4-4"></path>
+            </>),
             text: "Enterprise email compliance"
         },
         {
-            image: "https://ik.imagekit.io/apps365/Lp-pages/Microsoft%20Entra%20ID%20security.svg",
+            bg: "#E8EDF3",
+            color: "#0b1f3a",
+            icon: boxSvg(<>
+                <circle cx="7.5" cy="15.5" r="5.5"></circle>
+                <path d="m21 2-9.6 9.6"></path>
+                <path d="m15.5 7.5 3 3L22 7l-3-3"></path>
+            </>),
             text: "Enterprise SSO security"
         },
         {
-            image: "https://ik.imagekit.io/apps365/Lp-pages/Centralized%20contract%20repository.svg",
+            bg: "#F3E5F5",
+            color: "#7B1FA2",
+            icon: boxSvg(<>
+                <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                <path d="M12 12V8"></path>
+            </>),
             text: "Centralized meeting governance"
         },
     ];
@@ -581,14 +640,12 @@ function Schedule365() {
                                 </h1>
 
                                 <h2 className="hero-heading">
-                                    Outlook Meeting Scheduling -
-                                    <br />
-                                    Software <span className="accent">with AI Agents</span>
+                                    Your AI meeting schedule with MS365 and Google suits
                                 </h2>
 
                                 <p className="hero-desc">
-                                    <strong>Stop losing time to back-and-forth emails, double-bookings, and disconnected calendar tools. </strong>
-                                    Schedule 365 transforms Outlook into an autonomous, AI-driven meeting scheduling engine. Coordinate internal cross-team syncs, client meetings, and multi-timezone availability directly inside your Outlook inbox.
+                                    <strong>Stop the back-and-forth emails and double-bookings. </strong>
+                                    Schedule 365 turns Outlook into an AI-driven scheduling engine for teams, clients, and time zones.
                                 </p>
 
                                 <div className="hero-cta">
@@ -750,7 +807,7 @@ function Schedule365() {
                         <div className="why-choose-boxs">
                             {Boxs.map((data, index) => (
                                 <div className='boxs' key={index}>
-                                    <img decoding="async" src={data.image} title="" alt="schedule365" loading="lazy" />
+                                    <div className="boxs-icon" style={{ background: data.bg, color: data.color }}>{data.icon}</div>
                                     <p>{data.text}</p>
                                 </div>
                             ))}
